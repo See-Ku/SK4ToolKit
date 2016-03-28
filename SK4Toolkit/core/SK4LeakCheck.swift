@@ -8,24 +8,25 @@
 
 import Foundation
 
-private var g_leakCheckTab = 0
-
 /// メモリリークをチェックするためだけのクラス
 public class SK4LeakCheck {
+
+	static var leakCheckTab = 0
+
 	let tab: Int
 	let name: String
 
 	public init(name: String) {
-		self.tab = g_leakCheckTab
+		self.tab = SK4LeakCheck.leakCheckTab
 		self.name = name
 
-		g_leakCheckTab += 1
+		SK4LeakCheck.leakCheckTab += 1
 		printState(">>")
 	}
 
 	deinit {
 		printState("<<")
-		g_leakCheckTab -= 1
+		SK4LeakCheck.leakCheckTab -= 1
 	}
 
 	func printState(mes: String) {
@@ -36,7 +37,6 @@ public class SK4LeakCheck {
 		}
 		print("\(skip)\(name)")
 	}
-
 }
 
 // eof

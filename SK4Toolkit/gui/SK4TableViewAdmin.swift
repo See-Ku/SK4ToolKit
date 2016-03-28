@@ -237,7 +237,6 @@ public class SK4TableViewAdmin: NSObject, UITableViewDelegate, UITableViewDataSo
 	public func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
 		return cellHeight
 	}
-
 }
 
 // eof

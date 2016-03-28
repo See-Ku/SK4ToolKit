@@ -94,7 +94,6 @@ public class SK4PickerViewUnit {
 		}
 		return -1
 	}
-	
 }
 
 
@@ -279,7 +278,6 @@ public class SK4PickerViewAdmin: NSObject, UIPickerViewDelegate, UIPickerViewDat
 
 		didSelectRow(row)
 	}
-	
 }
 
 // eof

@@ -10,6 +10,7 @@ import UIKit
 
 extension NSMutableAttributedString {
 
+	/// Stringに装飾を適用して追加
 	public func sk4AppendString(string: String, attrs: [String:AnyObject]) {
 		let tmp = NSAttributedString(string: string, attributes: attrs)
 		appendAttributedString(tmp)

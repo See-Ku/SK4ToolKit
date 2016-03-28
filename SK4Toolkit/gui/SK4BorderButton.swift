@@ -73,7 +73,6 @@ public class SK4BorderButton: UIButton {
 		layer.borderColor = currentTitleColor.CGColor
 		clipsToBounds = true
 	}
-
 }
 
 // eof

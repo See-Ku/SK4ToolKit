@@ -120,7 +120,6 @@ public class SK4CollectionViewAdmin: NSObject, UICollectionViewDataSource, UICol
 	public func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAtIndex section: Int) -> CGFloat {
 		return minimumInteritemSpacing(section)
 	}
-
 }
 
 // eof

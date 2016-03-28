@@ -54,7 +54,6 @@ public class SK4LazyTimer: NSObject {
 			}
 		}
 	}
-	
 }
 
 // eof

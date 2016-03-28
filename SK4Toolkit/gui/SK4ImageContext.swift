@@ -282,7 +282,7 @@ public class SK4ImageContext {
 	/// CGGradientを生成
 	public func createGradient(components: [CGFloat], locations: [CGFloat]) -> CGGradient! {
 
-		assert(components.count % 4 == 0, "components count error.")
+		assert(components.count % 4 == 0, "Components count error.")
 
 		var count = locations.count
 		if components.count < count * 4 {
@@ -297,7 +297,6 @@ public class SK4ImageContext {
 	public func drawLinearGradient(gradient: CGGradient, start: CGPoint, end: CGPoint, options: CGGradientDrawingOptions = []) {
 		CGContextDrawLinearGradient(context, gradient, start, end, options)
 	}
-
 }
 
 // eof

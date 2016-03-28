@@ -8,16 +8,6 @@
 
 import Foundation
 
-/*
-private let g_timebase = getTimebaseInfo()
-
-private func getTimebaseInfo() -> mach_timebase_info_data_t {
-	var base = mach_timebase_info_data_t()
-	mach_timebase_info(&base)
-	return base
-}
-*/
-
 private let g_timebase: mach_timebase_info_data_t = {
 	var base = mach_timebase_info_data_t()
 	mach_timebase_info(&base)
@@ -86,7 +76,6 @@ public class SK4StopWatch {
 	public func printInterval() {
 		print("-- Interval: \(intervalSecond()) sec")
 	}
-
 }
 
 // eof

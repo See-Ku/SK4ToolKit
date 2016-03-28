@@ -61,7 +61,6 @@ public class SK4TextAttributes {
 	/// 初期化
 	public init() {
 	}
-	
 }
 
 // eof

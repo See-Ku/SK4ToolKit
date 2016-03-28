@@ -170,7 +170,6 @@ public class SK4ImageCache {
 	public func makeCachePath(name: String) -> String {
 		return dir + prefix + name + suffix
 	}
-	
 }
 
 // eof

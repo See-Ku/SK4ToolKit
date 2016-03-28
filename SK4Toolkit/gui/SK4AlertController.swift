@@ -76,7 +76,6 @@ public class SK4AlertController {
 		let alert = getAlertController()
 		parent.presentViewController(alert, animated: animated, completion: completion)
 	}
-
 }
 
 // eof

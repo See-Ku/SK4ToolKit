@@ -73,20 +73,6 @@ extension String {
 		nsString.drawInRect(rect, withAttributes: attrs)
 	}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	// /////////////////////////////////////////////////////////////
 	// MARK: - フレームワーク内部で使用
 
@@ -94,7 +80,6 @@ extension String {
 	var nsString: NSString {
 		return (self as NSString)
 	}
-
 }
 
 // eof

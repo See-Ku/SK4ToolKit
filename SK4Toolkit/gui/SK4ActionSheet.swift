@@ -108,7 +108,6 @@ public class SK4ActionSheet: SK4AlertController {
 		alert.popoverPresentationController?.permittedArrowDirections = permittedArrowDirections
 		return alert
 	}
-
 }
 
 // eof
