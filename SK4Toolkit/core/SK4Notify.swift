@@ -43,34 +43,34 @@ public protocol SK4Notify {
 /// 通知関係の実装
 extension SK4Notify where Self: Equatable {
 
-	func recieveNotify(observer: AnyObject, block: (()->Void)) {
+	public func recieveNotify(observer: AnyObject, block: (()->Void)) {
 		let info = SK4NotifyHub.Info(notify: self, observer: observer, block: block, mainQueue: true)
 		SK4NotifyHub.addInfo(info)
 	}
 
-	func recieveNotify<T>(observer: AnyObject, block: (T->Void)) {
+	public func recieveNotify<T>(observer: AnyObject, block: (T->Void)) {
 		let info = SK4NotifyHub.Info(notify: self, observer: observer, block: block, mainQueue: true)
 		SK4NotifyHub.addInfo(info)
 	}
 
-	func recieveNotifyGlobal<T>(observer: AnyObject, block: (T->Void)) {
+	public func recieveNotifyGlobal<T>(observer: AnyObject, block: (T->Void)) {
 		let info = SK4NotifyHub.Info(notify: self, observer: observer, block: block, mainQueue: false)
 		SK4NotifyHub.addInfo(info)
 	}
 
-	func postNotify() {
+	public func postNotify() {
 		SK4NotifyHub.postNotify(self, param: ())
 	}
 
-	func postNotify<T>(param: T) {
+	public func postNotify<T>(param: T) {
 		SK4NotifyHub.postNotify(self, param: param)
 	}
 
-	func removeNotify(observer: AnyObject) {
+	public func removeNotify(observer: AnyObject) {
 		SK4NotifyHub.removeInfo(self, observer: observer)
 	}
 
-	func compareNotify(notify: SK4Notify) -> Bool {
+	public func compareNotify(notify: SK4Notify) -> Bool {
 		if let notify = notify as? Self where notify == self {
 			return true
 		} else {
