@@ -77,7 +77,7 @@ extension String {
 	// MARK: - フレームワーク内部で使用
 
 	/// NSStringを取得
-	var nsString: NSString {
+	public var nsString: NSString {
 		return (self as NSString)
 	}
 }
