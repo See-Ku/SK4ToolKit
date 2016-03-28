@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87A583841CA8F51300D0E357 /* SK4ToolKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A583831CA8F51300D0E357 /* SK4ToolKit.swift */; };
+		87A5838E1CA8F55D00D0E357 /* SK4Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A583881CA8F55D00D0E357 /* SK4Dispatch.swift */; };
+		87A5838F1CA8F55D00D0E357 /* SK4ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A583891CA8F55D00D0E357 /* SK4ImageCache.swift */; };
+		87A583901CA8F55D00D0E357 /* SK4LazyTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A5838A1CA8F55D00D0E357 /* SK4LazyTimer.swift */; };
+		87A583911CA8F55D00D0E357 /* SK4LeakCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A5838B1CA8F55D00D0E357 /* SK4LeakCheck.swift */; };
+		87A583921CA8F55D00D0E357 /* SK4Notify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A5838C1CA8F55D00D0E357 /* SK4Notify.swift */; };
+		87A583931CA8F55D00D0E357 /* SK4StopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A5838D1CA8F55D00D0E357 /* SK4StopWatch.swift */; };
+		87A583961CA8F56900D0E357 /* SK4NSAttributedStringExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A583941CA8F56900D0E357 /* SK4NSAttributedStringExtention.swift */; };
+		87A583971CA8F56900D0E357 /* SK4StringExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A583951CA8F56900D0E357 /* SK4StringExtention.swift */; };
+		87A583A11CA8F57300D0E357 /* SK4ActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A583981CA8F57300D0E357 /* SK4ActionSheet.swift */; };
+		87A583A21CA8F57300D0E357 /* SK4AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A583991CA8F57300D0E357 /* SK4AlertController.swift */; };
+		87A583A31CA8F57300D0E357 /* SK4BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A5839A1CA8F57300D0E357 /* SK4BorderButton.swift */; };
+		87A583A41CA8F57300D0E357 /* SK4CollectionViewAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A5839B1CA8F57300D0E357 /* SK4CollectionViewAdmin.swift */; };
+		87A583A51CA8F57300D0E357 /* SK4ImageContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A5839C1CA8F57300D0E357 /* SK4ImageContext.swift */; };
+		87A583A61CA8F57300D0E357 /* SK4OverlayIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A5839D1CA8F57300D0E357 /* SK4OverlayIndicator.swift */; };
+		87A583A71CA8F57300D0E357 /* SK4PickerViewAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A5839E1CA8F57300D0E357 /* SK4PickerViewAdmin.swift */; };
+		87A583A81CA8F57300D0E357 /* SK4TableViewAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A5839F1CA8F57300D0E357 /* SK4TableViewAdmin.swift */; };
+		87A583A91CA8F57300D0E357 /* SK4TextAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A583A01CA8F57300D0E357 /* SK4TextAttributes.swift */; };
 		87BB45E01CA2A1F100F0BC50 /* SK4Toolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = 87BB45DF1CA2A1F100F0BC50 /* SK4Toolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		87BB45E71CA2A1F100F0BC50 /* SK4Toolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87BB45DC1CA2A1F100F0BC50 /* SK4Toolkit.framework */; };
 		87BB45EC1CA2A1F100F0BC50 /* SK4ToolkitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BB45EB1CA2A1F100F0BC50 /* SK4ToolkitTests.swift */; };
@@ -23,6 +41,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		87A583831CA8F51300D0E357 /* SK4ToolKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SK4ToolKit.swift; sourceTree = "<group>"; };
+		87A583881CA8F55D00D0E357 /* SK4Dispatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4Dispatch.swift; path = core/SK4Dispatch.swift; sourceTree = "<group>"; };
+		87A583891CA8F55D00D0E357 /* SK4ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ImageCache.swift; path = core/SK4ImageCache.swift; sourceTree = "<group>"; };
+		87A5838A1CA8F55D00D0E357 /* SK4LazyTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4LazyTimer.swift; path = core/SK4LazyTimer.swift; sourceTree = "<group>"; };
+		87A5838B1CA8F55D00D0E357 /* SK4LeakCheck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4LeakCheck.swift; path = core/SK4LeakCheck.swift; sourceTree = "<group>"; };
+		87A5838C1CA8F55D00D0E357 /* SK4Notify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4Notify.swift; path = core/SK4Notify.swift; sourceTree = "<group>"; };
+		87A5838D1CA8F55D00D0E357 /* SK4StopWatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4StopWatch.swift; path = core/SK4StopWatch.swift; sourceTree = "<group>"; };
+		87A583941CA8F56900D0E357 /* SK4NSAttributedStringExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4NSAttributedStringExtention.swift; path = extention/SK4NSAttributedStringExtention.swift; sourceTree = "<group>"; };
+		87A583951CA8F56900D0E357 /* SK4StringExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4StringExtention.swift; path = extention/SK4StringExtention.swift; sourceTree = "<group>"; };
+		87A583981CA8F57300D0E357 /* SK4ActionSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ActionSheet.swift; path = gui/SK4ActionSheet.swift; sourceTree = "<group>"; };
+		87A583991CA8F57300D0E357 /* SK4AlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4AlertController.swift; path = gui/SK4AlertController.swift; sourceTree = "<group>"; };
+		87A5839A1CA8F57300D0E357 /* SK4BorderButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4BorderButton.swift; path = gui/SK4BorderButton.swift; sourceTree = "<group>"; };
+		87A5839B1CA8F57300D0E357 /* SK4CollectionViewAdmin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4CollectionViewAdmin.swift; path = gui/SK4CollectionViewAdmin.swift; sourceTree = "<group>"; };
+		87A5839C1CA8F57300D0E357 /* SK4ImageContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ImageContext.swift; path = gui/SK4ImageContext.swift; sourceTree = "<group>"; };
+		87A5839D1CA8F57300D0E357 /* SK4OverlayIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4OverlayIndicator.swift; path = gui/SK4OverlayIndicator.swift; sourceTree = "<group>"; };
+		87A5839E1CA8F57300D0E357 /* SK4PickerViewAdmin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4PickerViewAdmin.swift; path = gui/SK4PickerViewAdmin.swift; sourceTree = "<group>"; };
+		87A5839F1CA8F57300D0E357 /* SK4TableViewAdmin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4TableViewAdmin.swift; path = gui/SK4TableViewAdmin.swift; sourceTree = "<group>"; };
+		87A583A01CA8F57300D0E357 /* SK4TextAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4TextAttributes.swift; path = gui/SK4TextAttributes.swift; sourceTree = "<group>"; };
 		87BB45DC1CA2A1F100F0BC50 /* SK4Toolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SK4Toolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87BB45DF1CA2A1F100F0BC50 /* SK4Toolkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SK4Toolkit.h; sourceTree = "<group>"; };
 		87BB45E11CA2A1F100F0BC50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,6 +86,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		87A583851CA8F51E00D0E357 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				87A583881CA8F55D00D0E357 /* SK4Dispatch.swift */,
+				87A583891CA8F55D00D0E357 /* SK4ImageCache.swift */,
+				87A5838A1CA8F55D00D0E357 /* SK4LazyTimer.swift */,
+				87A5838B1CA8F55D00D0E357 /* SK4LeakCheck.swift */,
+				87A5838C1CA8F55D00D0E357 /* SK4Notify.swift */,
+				87A5838D1CA8F55D00D0E357 /* SK4StopWatch.swift */,
+			);
+			name = core;
+			sourceTree = "<group>";
+		};
+		87A583861CA8F52800D0E357 /* gui */ = {
+			isa = PBXGroup;
+			children = (
+				87A583981CA8F57300D0E357 /* SK4ActionSheet.swift */,
+				87A583991CA8F57300D0E357 /* SK4AlertController.swift */,
+				87A5839A1CA8F57300D0E357 /* SK4BorderButton.swift */,
+				87A5839B1CA8F57300D0E357 /* SK4CollectionViewAdmin.swift */,
+				87A5839C1CA8F57300D0E357 /* SK4ImageContext.swift */,
+				87A5839D1CA8F57300D0E357 /* SK4OverlayIndicator.swift */,
+				87A5839E1CA8F57300D0E357 /* SK4PickerViewAdmin.swift */,
+				87A5839F1CA8F57300D0E357 /* SK4TableViewAdmin.swift */,
+				87A583A01CA8F57300D0E357 /* SK4TextAttributes.swift */,
+			);
+			name = gui;
+			sourceTree = "<group>";
+		};
+		87A583871CA8F54400D0E357 /* extention */ = {
+			isa = PBXGroup;
+			children = (
+				87A583941CA8F56900D0E357 /* SK4NSAttributedStringExtention.swift */,
+				87A583951CA8F56900D0E357 /* SK4StringExtention.swift */,
+			);
+			name = extention;
+			sourceTree = "<group>";
+		};
 		87BB45D21CA2A1F100F0BC50 = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +145,10 @@
 		87BB45DE1CA2A1F100F0BC50 /* SK4Toolkit */ = {
 			isa = PBXGroup;
 			children = (
+				87A583831CA8F51300D0E357 /* SK4ToolKit.swift */,
+				87A583851CA8F51E00D0E357 /* core */,
+				87A583871CA8F54400D0E357 /* extention */,
+				87A583861CA8F52800D0E357 /* gui */,
 				87BB45DF1CA2A1F100F0BC50 /* SK4Toolkit.h */,
 				87BB45E11CA2A1F100F0BC50 /* Info.plist */,
 			);
@@ -194,6 +272,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87A583A91CA8F57300D0E357 /* SK4TextAttributes.swift in Sources */,
+				87A583A41CA8F57300D0E357 /* SK4CollectionViewAdmin.swift in Sources */,
+				87A583A31CA8F57300D0E357 /* SK4BorderButton.swift in Sources */,
+				87A583901CA8F55D00D0E357 /* SK4LazyTimer.swift in Sources */,
+				87A583921CA8F55D00D0E357 /* SK4Notify.swift in Sources */,
+				87A583A81CA8F57300D0E357 /* SK4TableViewAdmin.swift in Sources */,
+				87A583A51CA8F57300D0E357 /* SK4ImageContext.swift in Sources */,
+				87A583A21CA8F57300D0E357 /* SK4AlertController.swift in Sources */,
+				87A5838E1CA8F55D00D0E357 /* SK4Dispatch.swift in Sources */,
+				87A583A71CA8F57300D0E357 /* SK4PickerViewAdmin.swift in Sources */,
+				87A583931CA8F55D00D0E357 /* SK4StopWatch.swift in Sources */,
+				87A583971CA8F56900D0E357 /* SK4StringExtention.swift in Sources */,
+				87A583911CA8F55D00D0E357 /* SK4LeakCheck.swift in Sources */,
+				87A583841CA8F51300D0E357 /* SK4ToolKit.swift in Sources */,
+				87A5838F1CA8F55D00D0E357 /* SK4ImageCache.swift in Sources */,
+				87A583A11CA8F57300D0E357 /* SK4ActionSheet.swift in Sources */,
+				87A583A61CA8F57300D0E357 /* SK4OverlayIndicator.swift in Sources */,
+				87A583961CA8F56900D0E357 /* SK4NSAttributedStringExtention.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +406,7 @@
 		87BB45F11CA2A1F100F0BC50 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -320,12 +417,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.see-ku.SK4Toolkit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		87BB45F21CA2A1F100F0BC50 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
