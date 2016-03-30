@@ -9,19 +9,32 @@
 import UIKit
 
 /// 簡単なカラーピッカー
+@IBDesignable
 public class SK4ColorPicker: UIControl {
 
 	// /////////////////////////////////////////////////////////////
 	// MARK: - プロパティ＆初期化
 
 	/// 水平方向の分割数
-	public var divX = 12
+	@IBInspectable public var divX: Int = 12 {
+		didSet {
+			setNeedsDisplay()
+		}
+	}
 
-	/// 垂直方向の分割数　※最終行は描画されない
-	public var divY = 9
+	/// 垂直方向の分割数
+	@IBInspectable public var divY: Int = 8 {
+		didSet {
+			setNeedsDisplay()
+		}
+	}
 
 	/// 各色を描画するときの余白
-	public var margin: CGFloat = 2
+	@IBInspectable public var margin: CGFloat = 2 {
+		didSet {
+			setNeedsDisplay()
+		}
+	}
 
 	/// 選択した色
 	public var color = UIColor.whiteColor() {
@@ -63,7 +76,7 @@ public class SK4ColorPicker: UIControl {
 		let ic = SK4ImageContext.currentContext()
 		ic.setLineWidth(3)
 
-		let dif = 0.5 / CGFloat(divY)
+		let dif = 0.5 / CGFloat(divY + 1)
 
 		patternExec() { re, col in
 			ic.fillRect(re, color: col)
@@ -89,6 +102,10 @@ public class SK4ColorPicker: UIControl {
 
 	/// パターンを表示＆ヒットテスト
 	func patternExec(@noescape exec: (CGRect, UIColor)->Bool) {
+
+		let divX = self.divX
+		let divY = self.divY + 1
+
 		let wx = (bounds.width - margin) / CGFloat(divX)
 		let wy = (bounds.height - margin) / CGFloat(divY-1)
 
