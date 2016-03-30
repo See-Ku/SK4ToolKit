@@ -44,6 +44,72 @@ extension String {
 	}
 
 	// /////////////////////////////////////////////////////////////
+	// MARK: - 部分文字列
+
+	/// 先頭からindexまでの部分文字列を作成する　※範囲チェックあり
+	public func sk4SubstringToIndex(index: Int) -> String {
+		if index <= 0 {
+			return ""
+		} else if characters.count <= index {
+			return self
+		} else {
+			let pos = startIndex.advancedBy(index)
+			return substringToIndex(pos)
+		}
+	}
+
+	/// indexから末尾までの部分文字列を作成する　※範囲チェックあり
+	public func sk4SubstringFromIndex(index: Int) -> String {
+		if index <= 0 {
+			return self
+		} else if characters.count <= index {
+			return ""
+		} else {
+			let pos = startIndex.advancedBy(index)
+			return substringFromIndex(pos)
+		}
+	}
+
+	/// 指定された範囲の部分文字列を作成する　※範囲チェックあり
+	public func sk4SubstringWithRange(start start: Int, end: Int) -> String {
+		if start >= end {
+			return ""
+		} else {
+			let len = characters.count
+			let p0 = startIndex.advancedBy(max(0, start))
+			let p1 = startIndex.advancedBy(min(len, end))
+			return substringWithRange(p0 ..< p1)
+		}
+	}
+
+	/// 指定された範囲の部分文字列を作成する　※範囲チェックあり
+	public func sk4SubstringWithRange(range: Range<Int>) -> String {
+		return sk4SubstringWithRange(start: range.startIndex, end: range.endIndex)
+	}
+
+	/// 文字列の分割
+	public func sk4Split(separater: String) -> [String] {
+		return componentsSeparatedByString(separater)
+	}
+
+	// /////////////////////////////////////////////////////////////
+	// MARK: - 正規表現
+
+	/// 正規表現でマッチング
+	public func sk4RegularExpression(pattern: String, options: NSRegularExpressionOptions = []) -> [String] {
+		do {
+			let rex = try NSRegularExpression(pattern: pattern, options: options)
+			let ar = rex.matchesInString(self, options: [], range: NSRange(location: 0, length: nsString.length))
+			return ar.map() { rc in
+				return self.nsString.substringWithRange(rc.range)
+			}
+		} catch {
+			assertionFailure("Wrong regular expression. str: \(self) pat:\(pattern)")
+			return []
+		}
+	}
+
+	// /////////////////////////////////////////////////////////////
 	// MARK: - 描画
 
 	/// 指定された範囲の中央に文字列を描画
