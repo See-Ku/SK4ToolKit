@@ -8,11 +8,10 @@
 
 import UIKit
 
-
 // /////////////////////////////////////////////////////////////
 // MARK: - 各種定数
 
-public let SK4ToolKitVersion = 2.9
+public let SK4ToolKitVersion = 2.5
 
 
 // /////////////////////////////////////////////////////////////
@@ -175,20 +174,19 @@ func sk4AspectFit(toRect toRect: CGRect, fromRect: CGRect) -> CGRect {
 	return CGRect(x: px, y: py, width: wx, height: wy)
 }
 
-
-
-/*
-// /////////////////////////////////////////////////////////////
-// MARK: - Array
-
-/// 添字は範囲内か？
-public func sk4IsInside<T>(array: Array<T>, index: Int) -> Bool {
-	if 0 <= index && index < array.count {
+/// 誤差の範囲内で一致するか？
+public func sk4NearlyEqual<T: SignedNumberType>(v0: T, _ v1: T, dif: T) -> Bool {
+	if abs(v0 - v1) <= dif {
 		return true
 	} else {
 		return false
 	}
 }
+
+
+
+// /////////////////////////////////////////////////////////////
+// MARK: - Array
 
 /// 範囲内の場合だけ取得
 public func sk4SafeGet<T>(array: Array<T>, index: Int) -> T? {
@@ -198,7 +196,6 @@ public func sk4SafeGet<T>(array: Array<T>, index: Int) -> T? {
 		return nil
 	}
 }
-*/
 
 
 // /////////////////////////////////////////////////////////////
@@ -212,8 +209,33 @@ public func sk4DebugLog(@autoclosure message:  () -> String, function: String = 
 	#endif
 }
 
+/// iPadで動作しているか？
+public func sk4IsPad() -> Bool {
+	if UIDevice.currentDevice().userInterfaceIdiom == .Pad {
+		return true
+	} else {
+		return false
+	}
+}
 
+/// iPhoneで動作しているか？
+public func sk4IsPhone() -> Bool {
+	if UIDevice.currentDevice().userInterfaceIdiom == .Phone {
+		return true
+	} else {
+		return false
+	}
+}
 
+/// デバイスは縦向きか？
+public func sk4IsPortraitOrientation() -> Bool {
+	let dir = UIApplication.sharedApplication().statusBarOrientation
+	if dir == .Portrait || dir == .PortraitUpsideDown {
+		return true
+	} else {
+		return false
+	}
+}
 
 
 // eof
