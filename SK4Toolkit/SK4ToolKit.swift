@@ -184,7 +184,6 @@ public func sk4NearlyEqual<T: SignedNumberType>(v0: T, _ v1: T, dif: T) -> Bool 
 }
 
 
-
 // /////////////////////////////////////////////////////////////
 // MARK: - Array
 

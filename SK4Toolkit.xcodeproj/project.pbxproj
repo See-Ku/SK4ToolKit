@@ -16,6 +16,8 @@
 		870216A71CABE0B0006137E9 /* SK4PauseFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870216A51CABE0B0006137E9 /* SK4PauseFlag.swift */; };
 		870216A91CABE128006137E9 /* SK4UIColorExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870216A81CABE128006137E9 /* SK4UIColorExtention.swift */; };
 		870216AB1CABE5EE006137E9 /* SK4ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870216AA1CABE5EE006137E9 /* SK4ColorPicker.swift */; };
+		87632DC21CAC0ACA004D31E0 /* PauseFlagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87632DC11CAC0ACA004D31E0 /* PauseFlagTests.swift */; };
+		87632DC41CAC0BCD004D31E0 /* StringExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87632DC31CAC0BCD004D31E0 /* StringExtensionTests.swift */; };
 		87A583841CA8F51300D0E357 /* SK4ToolKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A583831CA8F51300D0E357 /* SK4ToolKit.swift */; };
 		87A5838E1CA8F55D00D0E357 /* SK4Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A583881CA8F55D00D0E357 /* SK4Dispatch.swift */; };
 		87A5838F1CA8F55D00D0E357 /* SK4ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A583891CA8F55D00D0E357 /* SK4ImageCache.swift */; };
@@ -59,6 +61,8 @@
 		870216A51CABE0B0006137E9 /* SK4PauseFlag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4PauseFlag.swift; path = core/SK4PauseFlag.swift; sourceTree = "<group>"; };
 		870216A81CABE128006137E9 /* SK4UIColorExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4UIColorExtention.swift; path = extention/SK4UIColorExtention.swift; sourceTree = "<group>"; };
 		870216AA1CABE5EE006137E9 /* SK4ColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ColorPicker.swift; path = gui/SK4ColorPicker.swift; sourceTree = "<group>"; };
+		87632DC11CAC0ACA004D31E0 /* PauseFlagTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PauseFlagTests.swift; sourceTree = "<group>"; };
+		87632DC31CAC0BCD004D31E0 /* StringExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensionTests.swift; sourceTree = "<group>"; };
 		87A583831CA8F51300D0E357 /* SK4ToolKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SK4ToolKit.swift; sourceTree = "<group>"; };
 		87A583881CA8F55D00D0E357 /* SK4Dispatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4Dispatch.swift; path = core/SK4Dispatch.swift; sourceTree = "<group>"; };
 		87A583891CA8F55D00D0E357 /* SK4ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ImageCache.swift; path = core/SK4ImageCache.swift; sourceTree = "<group>"; };
@@ -186,6 +190,8 @@
 			isa = PBXGroup;
 			children = (
 				87BB45EB1CA2A1F100F0BC50 /* SK4ToolkitTests.swift */,
+				87632DC11CAC0ACA004D31E0 /* PauseFlagTests.swift */,
+				87632DC31CAC0BCD004D31E0 /* StringExtensionTests.swift */,
 				87BB45ED1CA2A1F100F0BC50 /* Info.plist */,
 			);
 			path = SK4ToolkitTests;
@@ -333,7 +339,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87632DC21CAC0ACA004D31E0 /* PauseFlagTests.swift in Sources */,
 				87BB45EC1CA2A1F100F0BC50 /* SK4ToolkitTests.swift in Sources */,
+				87632DC41CAC0BCD004D31E0 /* StringExtensionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
