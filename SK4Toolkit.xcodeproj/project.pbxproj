@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		8702169C1CABDE94006137E9 /* SK4ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8702169A1CABDE94006137E9 /* SK4ConstraintMaker.swift */; };
 		8702169D1CABDE94006137E9 /* SK4KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8702169B1CABDE94006137E9 /* SK4KeyboardObserver.swift */; };
+		870216A11CABDF7A006137E9 /* SK4TargetAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8702169E1CABDF7A006137E9 /* SK4TargetAction.swift */; };
+		870216A21CABDF7A006137E9 /* SK4TextFieldAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8702169F1CABDF7A006137E9 /* SK4TextFieldAdmin.swift */; };
+		870216A31CABDF7A006137E9 /* SK4TextViewAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870216A01CABDF7A006137E9 /* SK4TextViewAdmin.swift */; };
 		87A583841CA8F51300D0E357 /* SK4ToolKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A583831CA8F51300D0E357 /* SK4ToolKit.swift */; };
 		87A5838E1CA8F55D00D0E357 /* SK4Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A583881CA8F55D00D0E357 /* SK4Dispatch.swift */; };
 		87A5838F1CA8F55D00D0E357 /* SK4ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A583891CA8F55D00D0E357 /* SK4ImageCache.swift */; };
@@ -45,6 +48,9 @@
 /* Begin PBXFileReference section */
 		8702169A1CABDE94006137E9 /* SK4ConstraintMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ConstraintMaker.swift; path = gui/SK4ConstraintMaker.swift; sourceTree = "<group>"; };
 		8702169B1CABDE94006137E9 /* SK4KeyboardObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4KeyboardObserver.swift; path = gui/SK4KeyboardObserver.swift; sourceTree = "<group>"; };
+		8702169E1CABDF7A006137E9 /* SK4TargetAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4TargetAction.swift; path = gui/SK4TargetAction.swift; sourceTree = "<group>"; };
+		8702169F1CABDF7A006137E9 /* SK4TextFieldAdmin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4TextFieldAdmin.swift; path = gui/SK4TextFieldAdmin.swift; sourceTree = "<group>"; };
+		870216A01CABDF7A006137E9 /* SK4TextViewAdmin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4TextViewAdmin.swift; path = gui/SK4TextViewAdmin.swift; sourceTree = "<group>"; };
 		87A583831CA8F51300D0E357 /* SK4ToolKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SK4ToolKit.swift; sourceTree = "<group>"; };
 		87A583881CA8F55D00D0E357 /* SK4Dispatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4Dispatch.swift; path = core/SK4Dispatch.swift; sourceTree = "<group>"; };
 		87A583891CA8F55D00D0E357 /* SK4ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ImageCache.swift; path = core/SK4ImageCache.swift; sourceTree = "<group>"; };
@@ -107,16 +113,19 @@
 			isa = PBXGroup;
 			children = (
 				87A583981CA8F57300D0E357 /* SK4ActionSheet.swift */,
-				8702169A1CABDE94006137E9 /* SK4ConstraintMaker.swift */,
-				8702169B1CABDE94006137E9 /* SK4KeyboardObserver.swift */,
 				87A583991CA8F57300D0E357 /* SK4AlertController.swift */,
 				87A5839A1CA8F57300D0E357 /* SK4BorderButton.swift */,
 				87A5839B1CA8F57300D0E357 /* SK4CollectionViewAdmin.swift */,
+				8702169A1CABDE94006137E9 /* SK4ConstraintMaker.swift */,
 				87A5839C1CA8F57300D0E357 /* SK4ImageContext.swift */,
+				8702169B1CABDE94006137E9 /* SK4KeyboardObserver.swift */,
 				87A5839D1CA8F57300D0E357 /* SK4OverlayIndicator.swift */,
 				87A5839E1CA8F57300D0E357 /* SK4PickerViewAdmin.swift */,
 				87A5839F1CA8F57300D0E357 /* SK4TableViewAdmin.swift */,
+				8702169E1CABDF7A006137E9 /* SK4TargetAction.swift */,
 				87A583A01CA8F57300D0E357 /* SK4TextAttributes.swift */,
+				8702169F1CABDF7A006137E9 /* SK4TextFieldAdmin.swift */,
+				870216A01CABDF7A006137E9 /* SK4TextViewAdmin.swift */,
 			);
 			name = gui;
 			sourceTree = "<group>";
@@ -283,16 +292,19 @@
 				87A583A31CA8F57300D0E357 /* SK4BorderButton.swift in Sources */,
 				87A583901CA8F55D00D0E357 /* SK4LazyTimer.swift in Sources */,
 				87A583921CA8F55D00D0E357 /* SK4Notify.swift in Sources */,
+				870216A31CABDF7A006137E9 /* SK4TextViewAdmin.swift in Sources */,
 				8702169C1CABDE94006137E9 /* SK4ConstraintMaker.swift in Sources */,
 				87A583A81CA8F57300D0E357 /* SK4TableViewAdmin.swift in Sources */,
 				8702169D1CABDE94006137E9 /* SK4KeyboardObserver.swift in Sources */,
 				87A583A51CA8F57300D0E357 /* SK4ImageContext.swift in Sources */,
 				87A583A21CA8F57300D0E357 /* SK4AlertController.swift in Sources */,
+				870216A21CABDF7A006137E9 /* SK4TextFieldAdmin.swift in Sources */,
 				87A5838E1CA8F55D00D0E357 /* SK4Dispatch.swift in Sources */,
 				87A583A71CA8F57300D0E357 /* SK4PickerViewAdmin.swift in Sources */,
 				87A583931CA8F55D00D0E357 /* SK4StopWatch.swift in Sources */,
 				87A583971CA8F56900D0E357 /* SK4StringExtention.swift in Sources */,
 				87A583911CA8F55D00D0E357 /* SK4LeakCheck.swift in Sources */,
+				870216A11CABDF7A006137E9 /* SK4TargetAction.swift in Sources */,
 				87A583841CA8F51300D0E357 /* SK4ToolKit.swift in Sources */,
 				87A5838F1CA8F55D00D0E357 /* SK4ImageCache.swift in Sources */,
 				87A583A11CA8F57300D0E357 /* SK4ActionSheet.swift in Sources */,
