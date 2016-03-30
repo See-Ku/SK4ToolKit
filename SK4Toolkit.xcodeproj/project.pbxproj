@@ -14,6 +14,7 @@
 		870216A31CABDF7A006137E9 /* SK4TextViewAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870216A01CABDF7A006137E9 /* SK4TextViewAdmin.swift */; };
 		870216A61CABE0B0006137E9 /* SK4Interpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870216A41CABE0B0006137E9 /* SK4Interpolation.swift */; };
 		870216A71CABE0B0006137E9 /* SK4PauseFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870216A51CABE0B0006137E9 /* SK4PauseFlag.swift */; };
+		870216A91CABE128006137E9 /* SK4UIColorExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870216A81CABE128006137E9 /* SK4UIColorExtention.swift */; };
 		87A583841CA8F51300D0E357 /* SK4ToolKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A583831CA8F51300D0E357 /* SK4ToolKit.swift */; };
 		87A5838E1CA8F55D00D0E357 /* SK4Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A583881CA8F55D00D0E357 /* SK4Dispatch.swift */; };
 		87A5838F1CA8F55D00D0E357 /* SK4ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A583891CA8F55D00D0E357 /* SK4ImageCache.swift */; };
@@ -55,6 +56,7 @@
 		870216A01CABDF7A006137E9 /* SK4TextViewAdmin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4TextViewAdmin.swift; path = gui/SK4TextViewAdmin.swift; sourceTree = "<group>"; };
 		870216A41CABE0B0006137E9 /* SK4Interpolation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4Interpolation.swift; path = core/SK4Interpolation.swift; sourceTree = "<group>"; };
 		870216A51CABE0B0006137E9 /* SK4PauseFlag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4PauseFlag.swift; path = core/SK4PauseFlag.swift; sourceTree = "<group>"; };
+		870216A81CABE128006137E9 /* SK4UIColorExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4UIColorExtention.swift; path = extention/SK4UIColorExtention.swift; sourceTree = "<group>"; };
 		87A583831CA8F51300D0E357 /* SK4ToolKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SK4ToolKit.swift; sourceTree = "<group>"; };
 		87A583881CA8F55D00D0E357 /* SK4Dispatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4Dispatch.swift; path = core/SK4Dispatch.swift; sourceTree = "<group>"; };
 		87A583891CA8F55D00D0E357 /* SK4ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ImageCache.swift; path = core/SK4ImageCache.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				87A583941CA8F56900D0E357 /* SK4NSAttributedStringExtention.swift */,
+				870216A81CABE128006137E9 /* SK4UIColorExtention.swift */,
 				87A583951CA8F56900D0E357 /* SK4StringExtention.swift */,
 			);
 			name = extention;
@@ -316,6 +319,7 @@
 				87A583841CA8F51300D0E357 /* SK4ToolKit.swift in Sources */,
 				87A5838F1CA8F55D00D0E357 /* SK4ImageCache.swift in Sources */,
 				87A583A11CA8F57300D0E357 /* SK4ActionSheet.swift in Sources */,
+				870216A91CABE128006137E9 /* SK4UIColorExtention.swift in Sources */,
 				87A583A61CA8F57300D0E357 /* SK4OverlayIndicator.swift in Sources */,
 				87A583961CA8F56900D0E357 /* SK4NSAttributedStringExtention.swift in Sources */,
 			);
