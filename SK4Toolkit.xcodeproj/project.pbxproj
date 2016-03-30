@@ -12,6 +12,8 @@
 		870216A11CABDF7A006137E9 /* SK4TargetAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8702169E1CABDF7A006137E9 /* SK4TargetAction.swift */; };
 		870216A21CABDF7A006137E9 /* SK4TextFieldAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8702169F1CABDF7A006137E9 /* SK4TextFieldAdmin.swift */; };
 		870216A31CABDF7A006137E9 /* SK4TextViewAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870216A01CABDF7A006137E9 /* SK4TextViewAdmin.swift */; };
+		870216A61CABE0B0006137E9 /* SK4Interpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870216A41CABE0B0006137E9 /* SK4Interpolation.swift */; };
+		870216A71CABE0B0006137E9 /* SK4PauseFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870216A51CABE0B0006137E9 /* SK4PauseFlag.swift */; };
 		87A583841CA8F51300D0E357 /* SK4ToolKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A583831CA8F51300D0E357 /* SK4ToolKit.swift */; };
 		87A5838E1CA8F55D00D0E357 /* SK4Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A583881CA8F55D00D0E357 /* SK4Dispatch.swift */; };
 		87A5838F1CA8F55D00D0E357 /* SK4ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A583891CA8F55D00D0E357 /* SK4ImageCache.swift */; };
@@ -51,6 +53,8 @@
 		8702169E1CABDF7A006137E9 /* SK4TargetAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4TargetAction.swift; path = gui/SK4TargetAction.swift; sourceTree = "<group>"; };
 		8702169F1CABDF7A006137E9 /* SK4TextFieldAdmin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4TextFieldAdmin.swift; path = gui/SK4TextFieldAdmin.swift; sourceTree = "<group>"; };
 		870216A01CABDF7A006137E9 /* SK4TextViewAdmin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4TextViewAdmin.swift; path = gui/SK4TextViewAdmin.swift; sourceTree = "<group>"; };
+		870216A41CABE0B0006137E9 /* SK4Interpolation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4Interpolation.swift; path = core/SK4Interpolation.swift; sourceTree = "<group>"; };
+		870216A51CABE0B0006137E9 /* SK4PauseFlag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4PauseFlag.swift; path = core/SK4PauseFlag.swift; sourceTree = "<group>"; };
 		87A583831CA8F51300D0E357 /* SK4ToolKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SK4ToolKit.swift; sourceTree = "<group>"; };
 		87A583881CA8F55D00D0E357 /* SK4Dispatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4Dispatch.swift; path = core/SK4Dispatch.swift; sourceTree = "<group>"; };
 		87A583891CA8F55D00D0E357 /* SK4ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ImageCache.swift; path = core/SK4ImageCache.swift; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				87A583881CA8F55D00D0E357 /* SK4Dispatch.swift */,
+				870216A41CABE0B0006137E9 /* SK4Interpolation.swift */,
+				870216A51CABE0B0006137E9 /* SK4PauseFlag.swift */,
 				87A583891CA8F55D00D0E357 /* SK4ImageCache.swift */,
 				87A5838A1CA8F55D00D0E357 /* SK4LazyTimer.swift */,
 				87A5838B1CA8F55D00D0E357 /* SK4LeakCheck.swift */,
@@ -291,6 +297,7 @@
 				87A583A41CA8F57300D0E357 /* SK4CollectionViewAdmin.swift in Sources */,
 				87A583A31CA8F57300D0E357 /* SK4BorderButton.swift in Sources */,
 				87A583901CA8F55D00D0E357 /* SK4LazyTimer.swift in Sources */,
+				870216A71CABE0B0006137E9 /* SK4PauseFlag.swift in Sources */,
 				87A583921CA8F55D00D0E357 /* SK4Notify.swift in Sources */,
 				870216A31CABDF7A006137E9 /* SK4TextViewAdmin.swift in Sources */,
 				8702169C1CABDE94006137E9 /* SK4ConstraintMaker.swift in Sources */,
@@ -298,6 +305,7 @@
 				8702169D1CABDE94006137E9 /* SK4KeyboardObserver.swift in Sources */,
 				87A583A51CA8F57300D0E357 /* SK4ImageContext.swift in Sources */,
 				87A583A21CA8F57300D0E357 /* SK4AlertController.swift in Sources */,
+				870216A61CABE0B0006137E9 /* SK4Interpolation.swift in Sources */,
 				870216A21CABDF7A006137E9 /* SK4TextFieldAdmin.swift in Sources */,
 				87A5838E1CA8F55D00D0E357 /* SK4Dispatch.swift in Sources */,
 				87A583A71CA8F57300D0E357 /* SK4PickerViewAdmin.swift in Sources */,
