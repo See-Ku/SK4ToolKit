@@ -66,6 +66,15 @@ public class SK4TableViewAdmin: NSObject, UITableViewDelegate, UITableViewDataSo
 		}
 	}
 
+	/// 非同期でスクロール位置を調整する
+	/// ※reloadDataの直後でscrollToRowAtIndexPathが効かない場合に使用
+	public func scrollToRowAsync(row row: Int, section: Int, position: UITableViewScrollPosition = .Middle) {
+		sk4AsyncMain() {
+			let index = NSIndexPath(forRow: row, inSection: section)
+			self.tableView.scrollToRowAtIndexPath(index, atScrollPosition: position, animated: false)
+		}
+	}
+
 	// /////////////////////////////////////////////////////////////
 	// MARK: - for override
 
