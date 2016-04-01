@@ -1,7 +1,7 @@
 
-# SK4ToolKit
+# SK4Toolkit
 
-SK4ToolKitは、そこそこ便利な機能をいろいろまとめたフレームワークです。
+SK4Toolkitは、そこそこ便利な機能をいろいろまとめたフレームワークです。
 
 
 ## 動作環境
@@ -26,7 +26,7 @@ SK4ToolKitは、そこそこ便利な機能をいろいろまとめたフレー�
 
 Podfileにこんな感じで記入して下さい。
 
-	pod 'SK4ToolKit', :git => 'https://github.com/See-Ku/SK4ToolKit.git'
+	pod 'SK4Toolkit', :git => 'https://github.com/See-Ku/SK4Toolkit.git'
 
 ### プロジェクトをダウンロードしてインストール
 
@@ -44,4 +44,4 @@ GitHubからプロジェクトをダウンロードして使って下さい。
 ソースコードのライセンスは MIT とします。
 
 Copyright (c) 2013 See.Ku / AxeRoad
-https://github.com/See-Ku/SK4ToolKit/blob/master/LICENSE.txt
+https://github.com/See-Ku/SK4Toolkit/blob/master/LICENSE.txt

@@ -81,7 +81,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/See-Ku/SK4ToolKit.git", :tag => "v2.5.2" }
+  s.source       = { :git => "https://github.com/See-Ku/SK4Toolkit.git", :tag => "v2.5.2" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -92,7 +92,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "SK4ToolKit", "SK4ToolKit/**/*.{h,m,swift}"
+  s.source_files  = "SK4Toolkit", "SK4Toolkit/**/*.{h,m,swift}"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
