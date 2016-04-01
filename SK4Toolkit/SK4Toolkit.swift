@@ -1,6 +1,6 @@
 //
-//  SK4ToolKit.swift
-//  SK4ToolKit
+//  SK4Toolkit.swift
+//  SK4Toolkit
 //
 //  Created by See.Ku on 2016/03/23.
 //  Copyright (c) 2016 AxeRoad. All rights reserved.
@@ -207,6 +207,19 @@ public func sk4DebugLog(@autoclosure message:  () -> String, function: String = 
 		print("\(message()) - \(function)")
 	#endif
 }
+
+/// バージョン情報を取得
+public func sk4VersionString() -> String {
+	let bundle = NSBundle.mainBundle()
+	if let str = bundle.objectForInfoDictionaryKey("CFBundleShortVersionString") as? String {
+		return str
+	} else {
+		assertionFailure("objectForInfoDictionaryKey error: CFBundleShortVersionString")
+		return ""
+	}
+}
+
+// /////////////////////////////////////////////////////////////
 
 /// iPadで動作しているか？
 public func sk4IsPad() -> Bool {

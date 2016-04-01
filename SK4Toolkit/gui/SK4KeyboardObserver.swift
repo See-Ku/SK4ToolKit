@@ -1,6 +1,6 @@
 //
 //  SK4KeyboardObserver.swift
-//  SK4ToolKit
+//  SK4Toolkit
 //
 //  Created by See.Ku on 2016/03/29.
 //  Copyright (c) 2016 AxeRoad. All rights reserved.
