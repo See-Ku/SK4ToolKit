@@ -43,5 +43,5 @@ GitHubからプロジェクトをダウンロードして使って下さい。
 
 ソースコードのライセンスは MIT とします。
 
-Copyright (c) 2013 See.Ku / AxeRoad
+Copyright (c) 2016 See.Ku / AxeRoad  
 https://github.com/See-Ku/SK4Toolkit/blob/master/LICENSE.txt

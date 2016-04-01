@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SK4Toolkit"
-  s.version      = "2.5.2"
+  s.version      = "2.6.0"
   s.summary      = "そこそこ便利な機能をいろいろまとめたフレームワークです。"
 
   # This description is used to generate tags and improve search results.
@@ -81,7 +81,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/See-Ku/SK4Toolkit.git", :tag => "v2.5.2" }
+  s.source       = { :git => "https://github.com/See-Ku/SK4Toolkit.git", :tag => "v2.6.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

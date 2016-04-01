@@ -51,7 +51,7 @@
 		870632671CAEA1F70017C73A /* SK4ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870632621CAEA1F70017C73A /* SK4ConfigViewController.swift */; };
 		87632DC21CAC0ACA004D31E0 /* PauseFlagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87632DC11CAC0ACA004D31E0 /* PauseFlagTests.swift */; };
 		87632DC41CAC0BCD004D31E0 /* StringExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87632DC31CAC0BCD004D31E0 /* StringExtensionTests.swift */; };
-		87A583841CA8F51300D0E357 /* SK4ToolKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A583831CA8F51300D0E357 /* SK4ToolKit.swift */; };
+		87A583841CA8F51300D0E357 /* SK4Toolkit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A583831CA8F51300D0E357 /* SK4Toolkit.swift */; };
 		87A5838E1CA8F55D00D0E357 /* SK4Dispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A583881CA8F55D00D0E357 /* SK4Dispatch.swift */; };
 		87A5838F1CA8F55D00D0E357 /* SK4ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A583891CA8F55D00D0E357 /* SK4ImageCache.swift */; };
 		87A583901CA8F55D00D0E357 /* SK4LazyTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A5838A1CA8F55D00D0E357 /* SK4LazyTimer.swift */; };
@@ -129,7 +129,7 @@
 		870632621CAEA1F70017C73A /* SK4ConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ConfigViewController.swift; path = config/vc/SK4ConfigViewController.swift; sourceTree = "<group>"; };
 		87632DC11CAC0ACA004D31E0 /* PauseFlagTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PauseFlagTests.swift; sourceTree = "<group>"; };
 		87632DC31CAC0BCD004D31E0 /* StringExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensionTests.swift; sourceTree = "<group>"; };
-		87A583831CA8F51300D0E357 /* SK4ToolKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SK4ToolKit.swift; sourceTree = "<group>"; };
+		87A583831CA8F51300D0E357 /* SK4Toolkit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SK4Toolkit.swift; sourceTree = "<group>"; };
 		87A583881CA8F55D00D0E357 /* SK4Dispatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SK4Dispatch.swift; path = core/SK4Dispatch.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		87A583891CA8F55D00D0E357 /* SK4ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SK4ImageCache.swift; path = core/SK4ImageCache.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		87A5838A1CA8F55D00D0E357 /* SK4LazyTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SK4LazyTimer.swift; path = core/SK4LazyTimer.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -306,7 +306,7 @@
 		87BB45DE1CA2A1F100F0BC50 /* SK4Toolkit */ = {
 			isa = PBXGroup;
 			children = (
-				87A583831CA8F51300D0E357 /* SK4ToolKit.swift */,
+				87A583831CA8F51300D0E357 /* SK4Toolkit.swift */,
 				87BB45DF1CA2A1F100F0BC50 /* SK4Toolkit.h */,
 				870632241CAEA1670017C73A /* config */,
 				87A583851CA8F51E00D0E357 /* core */,
@@ -483,7 +483,7 @@
 				8706322A1CAEA1940017C73A /* SK4ConfigUserDefaults.swift in Sources */,
 				870632561CAEA1E90017C73A /* SK4ConfigCellDirectory.swift in Sources */,
 				870632551CAEA1E90017C73A /* SK4ConfigCellDate.swift in Sources */,
-				87A583841CA8F51300D0E357 /* SK4ToolKit.swift in Sources */,
+				87A583841CA8F51300D0E357 /* SK4Toolkit.swift in Sources */,
 				87A5838F1CA8F55D00D0E357 /* SK4ImageCache.swift in Sources */,
 				8706325B1CAEA1E90017C73A /* SK4ConfigCellSwitch.swift in Sources */,
 				8706323F1CAEA1DA0017C73A /* SK4ConfigInt.swift in Sources */,
