@@ -49,6 +49,8 @@
 		870632651CAEA1F70017C73A /* SK4ConfigDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870632601CAEA1F70017C73A /* SK4ConfigDateViewController.swift */; };
 		870632661CAEA1F70017C73A /* SK4ConfigPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870632611CAEA1F70017C73A /* SK4ConfigPickerViewController.swift */; };
 		870632671CAEA1F70017C73A /* SK4ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870632621CAEA1F70017C73A /* SK4ConfigViewController.swift */; };
+		8760C8881CAF62460008C0F7 /* ConfigAdminTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8760C8861CAF62460008C0F7 /* ConfigAdminTests.swift */; };
+		8760C8891CAF62460008C0F7 /* ConfigValueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8760C8871CAF62460008C0F7 /* ConfigValueTests.swift */; };
 		87632DC21CAC0ACA004D31E0 /* PauseFlagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87632DC11CAC0ACA004D31E0 /* PauseFlagTests.swift */; };
 		87632DC41CAC0BCD004D31E0 /* StringExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87632DC31CAC0BCD004D31E0 /* StringExtensionTests.swift */; };
 		87A583841CA8F51300D0E357 /* SK4Toolkit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A583831CA8F51300D0E357 /* SK4Toolkit.swift */; };
@@ -127,6 +129,8 @@
 		870632601CAEA1F70017C73A /* SK4ConfigDateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ConfigDateViewController.swift; path = config/vc/SK4ConfigDateViewController.swift; sourceTree = "<group>"; };
 		870632611CAEA1F70017C73A /* SK4ConfigPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ConfigPickerViewController.swift; path = config/vc/SK4ConfigPickerViewController.swift; sourceTree = "<group>"; };
 		870632621CAEA1F70017C73A /* SK4ConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ConfigViewController.swift; path = config/vc/SK4ConfigViewController.swift; sourceTree = "<group>"; };
+		8760C8861CAF62460008C0F7 /* ConfigAdminTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigAdminTests.swift; sourceTree = "<group>"; };
+		8760C8871CAF62460008C0F7 /* ConfigValueTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigValueTests.swift; sourceTree = "<group>"; };
 		87632DC11CAC0ACA004D31E0 /* PauseFlagTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PauseFlagTests.swift; sourceTree = "<group>"; };
 		87632DC31CAC0BCD004D31E0 /* StringExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensionTests.swift; sourceTree = "<group>"; };
 		87A583831CA8F51300D0E357 /* SK4Toolkit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SK4Toolkit.swift; sourceTree = "<group>"; };
@@ -320,10 +324,12 @@
 		87BB45EA1CA2A1F100F0BC50 /* SK4ToolkitTests */ = {
 			isa = PBXGroup;
 			children = (
-				87BB45EB1CA2A1F100F0BC50 /* SK4ToolkitTests.swift */,
-				87632DC11CAC0ACA004D31E0 /* PauseFlagTests.swift */,
-				87632DC31CAC0BCD004D31E0 /* StringExtensionTests.swift */,
+				8760C8861CAF62460008C0F7 /* ConfigAdminTests.swift */,
+				8760C8871CAF62460008C0F7 /* ConfigValueTests.swift */,
 				87BB45ED1CA2A1F100F0BC50 /* Info.plist */,
+				87632DC11CAC0ACA004D31E0 /* PauseFlagTests.swift */,
+				87BB45EB1CA2A1F100F0BC50 /* SK4ToolkitTests.swift */,
+				87632DC31CAC0BCD004D31E0 /* StringExtensionTests.swift */,
 			);
 			path = SK4ToolkitTests;
 			sourceTree = "<group>";
@@ -505,7 +511,9 @@
 			files = (
 				87632DC21CAC0ACA004D31E0 /* PauseFlagTests.swift in Sources */,
 				87BB45EC1CA2A1F100F0BC50 /* SK4ToolkitTests.swift in Sources */,
+				8760C8891CAF62460008C0F7 /* ConfigValueTests.swift in Sources */,
 				87632DC41CAC0BCD004D31E0 /* StringExtensionTests.swift in Sources */,
+				8760C8881CAF62460008C0F7 /* ConfigAdminTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
