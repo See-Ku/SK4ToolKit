@@ -1,6 +1,6 @@
 //
 //  SK4NSAttributedStringExtention.swift
-//  SK4ToolDemo
+//  SK4ToolKit
 //
 //  Created by See.Ku on 2016/03/27.
 //  Copyright (c) 2016 AxeRoad. All rights reserved.

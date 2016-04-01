@@ -20,11 +20,6 @@ public class SK4LazyTimer: NSObject {
 	/// 実行回数のカウンター
 	var counter: UInt64 = 0
 
-	/// 初期化
-//	override public init() {
-//		super.init()
-//	}
-
 	/// タイマーを設定　※Closureは[weak self]推奨
 	public func setup(hold hold: NSTimeInterval, exec: (() -> Void)?) {
 		self.hold = hold

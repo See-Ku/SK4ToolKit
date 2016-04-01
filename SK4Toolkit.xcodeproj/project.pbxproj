@@ -177,10 +177,10 @@
 			isa = PBXGroup;
 			children = (
 				87A583831CA8F51300D0E357 /* SK4ToolKit.swift */,
+				87BB45DF1CA2A1F100F0BC50 /* SK4Toolkit.h */,
 				87A583851CA8F51E00D0E357 /* core */,
 				87A583871CA8F54400D0E357 /* extention */,
 				87A583861CA8F52800D0E357 /* gui */,
-				87BB45DF1CA2A1F100F0BC50 /* SK4Toolkit.h */,
 				87BB45E11CA2A1F100F0BC50 /* Info.plist */,
 			);
 			path = SK4Toolkit;
