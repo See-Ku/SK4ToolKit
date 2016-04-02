@@ -57,18 +57,21 @@ public class SK4ConfigMulti: SK4ConfigValue {
 		}
 	}
 
-	/// 区切りに使用する文字
-	public var separater = " "
-
 	/// 選択時の説明
 	public var annotation = ""
 
-	// それぞれの列の情報
+	/// それぞれの列の情報
 	public var unitArray = [SK4PickerViewUnit]()
 
-	/// 初期化
-	override public init(title: String) {
+	// 区切りに使用する文字
+	public let separater: String
+
+	/// 初期化　※separaterには各項目に含まれてない文字を指定
+	public init(title: String, separater: String) {
+		self.separater = separater
 		super.init(title: title)
+
+		assert(separater.isEmpty == false)
 
 		self.cell = SK4ConfigCellPicker()
 	}
