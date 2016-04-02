@@ -266,10 +266,36 @@ public class SK4PickerViewAdmin: NSObject, UIPickerViewDelegate, UIPickerViewDat
 		}
 	}
 
+/*
 	public func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
 		let unit = unitArray[component]
 		let max = unit.itemCount()
 		return unit.indexToItem(row % max)
+	}
+*/
+
+	public func pickerView(pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusingView view: UIView?) -> UIView {
+
+		// 0.5倍まで縮小可能なUILabelを使用
+		let label: UILabel
+		if let tmp = view as? UILabel {
+			label = tmp
+		} else {
+			label = UILabel()
+			label.textAlignment = .Center
+			label.backgroundColor = UIColor.clearColor()
+
+			label.font = UIFont.systemFontOfSize(22)
+			label.adjustsFontSizeToFitWidth = true
+			label.minimumScaleFactor = 0.5
+		}
+
+		// テキストをセット
+		let unit = unitArray[component]
+		let max = unit.itemCount()
+		label.text = unit.indexToItem(row % max)
+
+		return label
 	}
 
 	public func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
