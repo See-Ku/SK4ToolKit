@@ -82,11 +82,11 @@ public class SK4ConfigAdmin: SK4ConfigValue {
 
 	/// まとめて編集開始
 	public func onEditStart() {
-		push()
-
 		if cancellation {
 			autoSave.pause()
 		}
+
+		push()
 	}
 
 	/// まとめて編集終了
@@ -97,10 +97,10 @@ public class SK4ConfigAdmin: SK4ConfigValue {
 
 		if cancellation {
 			autoSave.resume()
+		}
 
-			if autoSave.flag {
-				onSave()
-			}
+		if cancel == false && autoSave.flag {
+			onSave()
 		}
 	}
 
