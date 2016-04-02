@@ -108,9 +108,9 @@ public class SK4ConfigAdmin: SK4ConfigValue {
 
 	/// ViewControllerが表示になる
 	public func viewWillAppear() {
-		autoSave.pause()
-		onLoad()
-		autoSave.resume()
+//		autoSave.pause()
+//		onLoad()
+//		autoSave.resume()
 	}
 
 	/// ViewControllerが非表示になる
