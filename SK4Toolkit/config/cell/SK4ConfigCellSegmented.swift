@@ -57,7 +57,8 @@ public class SK4ConfigCellSegmented: SK4ConfigCell {
 		let cs = cell.contentView.bounds.size
 		let ss = seg.bounds.size
 		seg.frame.origin.x = cs.width - ss.width - Const.paddingRight
-		seg.frame.origin.y = (cs.height - ss.height) / 2
+//		seg.frame.origin.y = (cs.height - ss.height) / 2
+		seg.frame.origin.y = 8
 
 		cell.textLabel?.text = configValue.title
 	}
