@@ -11,13 +11,15 @@ SK4Toolkitは、そこそこ便利な機能をいろいろまとめたフレー�
 |Xcode	|7.3 (7D175)	|
 |iOS	|9.0			|
 |Swift	|2.2			|
-|Date	|2016/4/1		|
+|Date	|2016/4/1 -		|
 
 
 ## 説明書
 
 今のところありません。デモを用意したのでそちらをご覧下さい。
 
+See-Ku/SK4ToolDemo  
+https://github.com/See-Ku/SK4ToolDemo
 
 
 ## 使い方
