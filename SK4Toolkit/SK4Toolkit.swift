@@ -63,6 +63,23 @@ public func sk4GetWindow() -> UIWindow? {
 	return nil
 }
 
+/// 指定されたViewのAutoLayoutをオフにする
+public func sk4AutoLayoutOff(view: UIView) {
+
+	// 制約を全て削除
+	let ar = view.constraints
+	view.removeConstraints(ar)
+
+	// 基準になるViewは自動変換を使わない
+	view.translatesAutoresizingMaskIntoConstraints = false
+
+	// 子Viewは自動変換をONに
+	for child in view.subviews {
+		child.translatesAutoresizingMaskIntoConstraints = true
+	}
+}
+
+
 
 // /////////////////////////////////////////////////////////////
 // MARK: - システムディレクトリ取得
@@ -97,13 +114,43 @@ public func sk4GetSearchPathDirectory(dir: NSSearchPathDirectory) -> String {
 // /////////////////////////////////////////////////////////////
 // MARK: - ファイル操作
 
+/// ファイルの有無をチェック
+public func sk4IsFileExists(path: String) -> Bool {
+	let man = NSFileManager.defaultManager()
+	return man.fileExistsAtPath(path)
+}
+
+/// ファイルを移動
+public func sk4MoveFile(src src: String, dst: String) -> Bool {
+	do {
+		let man = NSFileManager.defaultManager()
+		try man.moveItemAtPath(src, toPath: dst)
+		return true
+	} catch {
+		sk4DebugLog("moveItemAtPath error \(src) -> \(dst): \(error)")
+		return false
+	}
+}
+
+/// ファイルをコピー
+public func sk4CopyFile(src src: String, dst: String) -> Bool {
+	do {
+		let man = NSFileManager.defaultManager()
+		try man.copyItemAtPath(src, toPath: dst)
+		return true
+	} catch {
+		sk4DebugLog("copyItemAtPath error \(src) -> \(dst): \(error)")
+		return false
+	}
+}
+
 /// ファイルを削除
 public func sk4DeleteFile(path: String) -> Bool {
 	do {
 		let man = NSFileManager.defaultManager()
 		try man.removeItemAtPath(path)
 		return true
-	} catch let error {
+	} catch {
 		sk4DebugLog("removeItemAtPath error \(path): \(error)")
 		return false
 	}
@@ -124,7 +171,7 @@ public func sk4FileListAtPath(path: String, ext: String? = nil) -> [String] {
 		} else {
 			return ar
 		}
-	} catch let error {
+	} catch {
 		sk4DebugLog("contentsOfDirectoryAtPath error \(path): \(error)")
 		return []
 	}
