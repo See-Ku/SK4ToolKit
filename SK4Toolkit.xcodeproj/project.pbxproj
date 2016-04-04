@@ -74,6 +74,9 @@
 		87BB45E01CA2A1F100F0BC50 /* SK4Toolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = 87BB45DF1CA2A1F100F0BC50 /* SK4Toolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		87BB45E71CA2A1F100F0BC50 /* SK4Toolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87BB45DC1CA2A1F100F0BC50 /* SK4Toolkit.framework */; };
 		87BB45EC1CA2A1F100F0BC50 /* SK4ToolkitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BB45EB1CA2A1F100F0BC50 /* SK4ToolkitTests.swift */; };
+		87FC53AC1CB24FC50081078A /* SK4TextBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FC53A91CB24FC50081078A /* SK4TextBaseViewController.swift */; };
+		87FC53AD1CB24FC50081078A /* SK4TextExportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FC53AA1CB24FC50081078A /* SK4TextExportViewController.swift */; };
+		87FC53AE1CB24FC50081078A /* SK4TextImportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FC53AB1CB24FC50081078A /* SK4TextImportViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,6 +160,9 @@
 		87BB45E61CA2A1F100F0BC50 /* SK4ToolkitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SK4ToolkitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87BB45EB1CA2A1F100F0BC50 /* SK4ToolkitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SK4ToolkitTests.swift; sourceTree = "<group>"; };
 		87BB45ED1CA2A1F100F0BC50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87FC53A91CB24FC50081078A /* SK4TextBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4TextBaseViewController.swift; path = gui/SK4TextBaseViewController.swift; sourceTree = "<group>"; };
+		87FC53AA1CB24FC50081078A /* SK4TextExportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4TextExportViewController.swift; path = gui/SK4TextExportViewController.swift; sourceTree = "<group>"; };
+		87FC53AB1CB24FC50081078A /* SK4TextImportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4TextImportViewController.swift; path = gui/SK4TextImportViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,6 +265,9 @@
 		87A583861CA8F52800D0E357 /* gui */ = {
 			isa = PBXGroup;
 			children = (
+				87FC53A91CB24FC50081078A /* SK4TextBaseViewController.swift */,
+				87FC53AA1CB24FC50081078A /* SK4TextExportViewController.swift */,
+				87FC53AB1CB24FC50081078A /* SK4TextImportViewController.swift */,
 				87A583981CA8F57300D0E357 /* SK4ActionSheet.swift */,
 				87A583991CA8F57300D0E357 /* SK4AlertController.swift */,
 				87A5839A1CA8F57300D0E357 /* SK4BorderButton.swift */,
@@ -470,11 +479,13 @@
 				87A583A21CA8F57300D0E357 /* SK4AlertController.swift in Sources */,
 				870216A61CABE0B0006137E9 /* SK4Interpolation.swift in Sources */,
 				8706325A1CAEA1E90017C73A /* SK4ConfigCellSegmented.swift in Sources */,
+				87FC53AC1CB24FC50081078A /* SK4TextBaseViewController.swift in Sources */,
 				870632651CAEA1F70017C73A /* SK4ConfigDateViewController.swift in Sources */,
 				870216A21CABDF7A006137E9 /* SK4TextFieldAdmin.swift in Sources */,
 				87A5838E1CA8F55D00D0E357 /* SK4Dispatch.swift in Sources */,
 				870632231CAEA15D0017C73A /* SK4TableViewController.swift in Sources */,
 				87A583A71CA8F57300D0E357 /* SK4PickerViewAdmin.swift in Sources */,
+				87FC53AE1CB24FC50081078A /* SK4TextImportViewController.swift in Sources */,
 				87A583931CA8F55D00D0E357 /* SK4StopWatch.swift in Sources */,
 				870632591CAEA1E90017C73A /* SK4ConfigCellPicker.swift in Sources */,
 				870632521CAEA1E90017C73A /* SK4ConfigCell.swift in Sources */,
@@ -485,6 +496,7 @@
 				87A583911CA8F55D00D0E357 /* SK4LeakCheck.swift in Sources */,
 				870216A11CABDF7A006137E9 /* SK4TargetAction.swift in Sources */,
 				870632421CAEA1DA0017C73A /* SK4ConfigString.swift in Sources */,
+				87FC53AD1CB24FC50081078A /* SK4TextExportViewController.swift in Sources */,
 				870632631CAEA1F70017C73A /* SK4ConfigChoiceViewController.swift in Sources */,
 				8706322A1CAEA1940017C73A /* SK4ConfigUserDefaults.swift in Sources */,
 				870632561CAEA1E90017C73A /* SK4ConfigCellDirectory.swift in Sources */,
