@@ -423,15 +423,12 @@ public class SK4DivideLayoutUnit: CustomStringConvertible {
 			}
 		}
 
-		// サイズを確定させる
-		var free_size: CGFloat = 0
-		if free_no > 0 {
-			free_size = (height - fix) / CGFloat(free_no)
-		}
+		// サイズが指定されていないユニットに空いてる領域を分配
+		distributeSpace(&size_ar, freeNo: free_no, totalSize: height, fixSize: fix)
 
-		for y in 0..<divideHeight {
-			let size = selectUnitSize(size_ar[y], free: free_size)
-			fixRowHeight(y, height: size)
+		// 確定したサイズを設定
+		for (i, val) in size_ar.enumerate() {
+			fixRowHeight(i, height: val)
 		}
 	}
 
@@ -469,15 +466,12 @@ public class SK4DivideLayoutUnit: CustomStringConvertible {
 			}
 		}
 
-		// サイズを確定させる
-		var free_size: CGFloat = 0
-		if free_no > 0 {
-			free_size = (width - fix) / CGFloat(free_no)
-		}
+		// サイズが指定されていないユニットに空いてる領域を分配
+		distributeSpace(&size_ar, freeNo: free_no, totalSize: width, fixSize: fix)
 
-		for x in 0..<divideWidth {
-			let size = selectUnitSize(size_ar[x], free: free_size)
-			fixColumnWidth(x, width: size)
+		// 確定したサイズを設定
+		for (i, val) in size_ar.enumerate() {
+			fixColumnWidth(i, width: val)
 		}
 	}
 
@@ -509,23 +503,28 @@ public class SK4DivideLayoutUnit: CustomStringConvertible {
 		}
 	}
 
-	/// ユニットのサイズを選択する
-	func selectUnitSize(base: CGFloat, free: CGFloat) -> CGFloat {
+	/// サイズが指定されていないユニットに空いてる領域を分配
+	func distributeSpace(inout sizeArray: [CGFloat], freeNo: Int, totalSize: CGFloat, fixSize: CGFloat) {
+		if freeNo == 0 {
+			return
+		}
 
-		if base == 0 {
+		let free_size = CGFloat(Int(totalSize - fixSize) / freeNo)
+		var rest_size = totalSize - fixSize
+		var rest_space = freeNo
 
-			// 指定されてない → 余った領域を等分割した値
-			return free
-
-		} else if base > 0 {
-
-			// 指定されている → その値をそのまま使用
-			return base
-
-		} else {
-
-			// 非表示 → サイズは0
-			return 0
+		for (i, val) in sizeArray.enumerate() {
+			if val == 0 {
+				if rest_space == 1 {
+					sizeArray[i] = rest_size
+				} else {
+					sizeArray[i] = free_size
+					rest_size -= free_size
+					rest_space -= 1
+				}
+			} else if val < 0 {
+				sizeArray[i] = 0
+			}
 		}
 	}
 
