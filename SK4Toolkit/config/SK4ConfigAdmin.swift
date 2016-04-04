@@ -49,33 +49,38 @@ public class SK4ConfigAdmin: SK4ConfigValue {
 	/// コンフィグを準備する
 	public func setup() {
 		autoSave.pause()
-
 		onSetup()
 		onLoad()
-
 		autoSave.resume()
+	}
+
+	/// コンフィグの自動保存を実行
+	public func autoSaveConfig() {
+		if autoSave.flag == true {
+			autoSave.pause()
+			onSave()
+			autoSave.resume()
+		}
 	}
 
 	// /////////////////////////////////////////////////////////////
 	// MARK: - for override
 
-	/// 設定を準備する
+	/// コンフィグを準備する
 	public func onSetup() {
 	}
 
-	/// 設定を復元
+	/// コンフィグを復元
 	public func onLoad() {
 	}
 
-	/// 設定を保存
+	/// コンフィグを保存
 	public func onSave() {
 	}
 
 	/// 値が変更された
 	public func onChange(config: SK4ConfigValue) {
-		if autoSave.flag == true {
-			onSave()
-		}
+		autoSaveConfig()
 	}
 
 	// /////////////////////////////////////////////////////////////
@@ -99,8 +104,8 @@ public class SK4ConfigAdmin: SK4ConfigValue {
 			autoSave.resume()
 		}
 
-		if cancel == false && autoSave.flag {
-			onSave()
+		if cancel == false {
+			autoSaveConfig()
 		}
 	}
 
@@ -147,7 +152,7 @@ public class SK4ConfigAdmin: SK4ConfigValue {
 
 		/// 設定をセクションに追加
 		public func addConfig(config: SK4ConfigValue) {
-			assert(config.configAdmin == nil, "Double registration error.")
+//			assert(config.configAdmin == nil, "Double registration error.")
 
 			configArray.append(config)
 			config.configAdmin = configAdmin
@@ -174,6 +179,11 @@ public class SK4ConfigAdmin: SK4ConfigValue {
 			hideSection = Section(name: Section.hideSectionName, configAdmin: self)
 		}
 		return hideSection!
+	}
+
+	/// 全てのユーザー設定用セクションを削除
+	public func removeUserSectionAll() {
+		userSection.removeAll(keepCapacity: true)
 	}
 
 	// /////////////////////////////////////////////////////////////
