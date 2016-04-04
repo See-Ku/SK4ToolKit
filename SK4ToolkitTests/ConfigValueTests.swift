@@ -152,7 +152,7 @@ class ConfigValueTests: XCTestCase {
 
 	func testMulti() {
 
-		let cv1 = SK4ConfigMulti(title: "Multi1")
+		let cv1 = SK4ConfigMulti(title: "Multi1", separater: " ")
 
 		let ar1 = ["Red", "Green", "Blue", "White", "Black"]
 		cv1.addUnit(ar1, select: 0)

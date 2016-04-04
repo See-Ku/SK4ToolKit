@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import SK4Toolkit
 
 extension NSDictionary {
 
