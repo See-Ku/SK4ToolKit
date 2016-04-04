@@ -12,8 +12,12 @@ extension NSDictionary {
 
 	/// 型とキーを指定して値を取得
 	public func sk4Get<T>(key: String, inout value: T) {
-		if let num = self[key] as? T {
-			value = num
+		if let tmp = self[key] {
+			if let tmp = tmp as? T {
+				value = tmp
+			} else {
+				sk4DebugLog("Type mismatch error: \(key)")
+			}
 		}
 	}
 
