@@ -110,20 +110,78 @@ extension String {
 	}
 
 	// /////////////////////////////////////////////////////////////
+	// MARK: - データ変換
+
+	/// 文字列からNSDataを生成
+	public func sk4ToNSData() -> NSData? {
+		return nsString.dataUsingEncoding(NSUTF8StringEncoding)
+	}
+
+	/// Base64文字列をNSDataにデコード
+	public func sk4Base64Decode(options: NSDataBase64DecodingOptions = .IgnoreUnknownCharacters) -> NSData? {
+		return NSData(base64EncodedString: self, options: options)
+	}
+
+	// /////////////////////////////////////////////////////////////
+	// MARK: - JSON
+
+	/// JSON形式の文字列からNSDictionaryを生成
+	public func sk4JsonToDic(options: NSJSONReadingOptions = []) -> NSDictionary? {
+		guard let data = sk4ToNSData() else { return nil }
+
+		do {
+			if let dic = try NSJSONSerialization.JSONObjectWithData(data, options: options) as? NSDictionary {
+				return dic
+			}
+		} catch {
+			sk4DebugLog("JSONObjectWithData error: \(error)")
+		}
+
+		return nil
+	}
+
+	// /////////////////////////////////////////////////////////////
+	// MARK: - ファイル入出力
+
+	/// ファイルを読み込み
+	static public func sk4ReadFile(path: String) -> String? {
+		do {
+			return try String(contentsOfFile: path)
+		} catch {
+			return nil
+		}
+	}
+
+	/// ファイルに書き出し
+	public func sk4WriteFile(path: String) -> Bool {
+		do {
+			try writeToFile(path, atomically: true, encoding: NSUTF8StringEncoding)
+			return true
+		} catch {
+			return false
+		}
+	}
+
+	// /////////////////////////////////////////////////////////////
 	// MARK: - 描画
+
+	/// 描画範囲を示す矩形を取得
+	public func sk4BoundingRect(size: CGSize, options: NSStringDrawingOptions = .UsesLineFragmentOrigin, attributes: [String : AnyObject]? = nil, context: NSStringDrawingContext? = nil) -> CGRect {
+		return self.boundingRectWithSize(size, options: options, attributes: attributes, context: context)
+	}
 
 	/// 指定された範囲の中央に文字列を描画
 	public func sk4DrawAtCenter(rect: CGRect, withAttributes attrs: [String:AnyObject]?) {
-		let size = nsString.sizeWithAttributes(attrs)
+		let size = self.sizeWithAttributes(attrs)
 		let cx = rect.midX - size.width/2
 		let cy = rect.midY - size.height/2
-		nsString.drawAtPoint(CGPoint(x: cx, y: cy), withAttributes: attrs)
+		self.drawAtPoint(CGPoint(x: cx, y: cy), withAttributes: attrs)
 	}
 
 	/// 垂直方向のアライメントを指定して、文字列を描画
 	public func sk4DrawInRect(rect: CGRect, withAttributes attrs: [String:AnyObject]?, vertical: SK4VerticalAlignment = .Top) {
 		var rect = rect
-		let bound = nsString.boundingRectWithSize(rect.size, options: .UsesLineFragmentOrigin, attributes: attrs, context: nil)
+		let bound = sk4BoundingRect(rect.size, attributes: attrs)
 
 		switch vertical {
 		case .Top:
@@ -136,7 +194,7 @@ extension String {
 			rect.origin.y += rect.height - bound.height
 		}
 
-		nsString.drawInRect(rect, withAttributes: attrs)
+		self.drawInRect(rect, withAttributes: attrs)
 	}
 
 	// /////////////////////////////////////////////////////////////
