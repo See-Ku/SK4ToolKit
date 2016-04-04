@@ -20,13 +20,17 @@ public class SK4LeakCheck {
 		self.tab = SK4LeakCheck.leakCheckTab
 		self.name = name
 
-		SK4LeakCheck.leakCheckTab += 1
-		printState(">>")
+		#if DEBUG
+			SK4LeakCheck.leakCheckTab += 1
+			printState(">>")
+		#endif
 	}
 
 	deinit {
-		printState("<<")
-		SK4LeakCheck.leakCheckTab -= 1
+		#if DEBUG
+			printState("<<")
+			SK4LeakCheck.leakCheckTab -= 1
+		#endif
 	}
 
 	func printState(mes: String) {
