@@ -82,6 +82,9 @@
 		87FC53B61CB250A90081078A /* SK4NSDateFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FC53B11CB250A90081078A /* SK4NSDateFormatterExtension.swift */; };
 		87FC53B71CB250A90081078A /* SK4NSDictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FC53B21CB250A90081078A /* SK4NSDictionaryExtension.swift */; };
 		87FC53B81CB250A90081078A /* SK4UIEdgeInsetsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FC53B31CB250A90081078A /* SK4UIEdgeInsetsExtension.swift */; };
+		87FC53BC1CB2514A0081078A /* SK4DivideLayoutAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FC53B91CB2514A0081078A /* SK4DivideLayoutAdmin.swift */; };
+		87FC53BD1CB2514A0081078A /* SK4DivideLayoutUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FC53BA1CB2514A0081078A /* SK4DivideLayoutUnit.swift */; };
+		87FC53BE1CB2514A0081078A /* SK4DivideLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FC53BB1CB2514A0081078A /* SK4DivideLayoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -173,6 +176,9 @@
 		87FC53B11CB250A90081078A /* SK4NSDateFormatterExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4NSDateFormatterExtension.swift; path = extention/SK4NSDateFormatterExtension.swift; sourceTree = "<group>"; };
 		87FC53B21CB250A90081078A /* SK4NSDictionaryExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4NSDictionaryExtension.swift; path = extention/SK4NSDictionaryExtension.swift; sourceTree = "<group>"; };
 		87FC53B31CB250A90081078A /* SK4UIEdgeInsetsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4UIEdgeInsetsExtension.swift; path = extention/SK4UIEdgeInsetsExtension.swift; sourceTree = "<group>"; };
+		87FC53B91CB2514A0081078A /* SK4DivideLayoutAdmin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4DivideLayoutAdmin.swift; path = gui/SK4DivideLayoutAdmin.swift; sourceTree = "<group>"; };
+		87FC53BA1CB2514A0081078A /* SK4DivideLayoutUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4DivideLayoutUnit.swift; path = gui/SK4DivideLayoutUnit.swift; sourceTree = "<group>"; };
+		87FC53BB1CB2514A0081078A /* SK4DivideLayoutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4DivideLayoutView.swift; path = gui/SK4DivideLayoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -276,6 +282,9 @@
 			isa = PBXGroup;
 			children = (
 				87FC53A91CB24FC50081078A /* SK4TextBaseViewController.swift */,
+				87FC53B91CB2514A0081078A /* SK4DivideLayoutAdmin.swift */,
+				87FC53BA1CB2514A0081078A /* SK4DivideLayoutUnit.swift */,
+				87FC53BB1CB2514A0081078A /* SK4DivideLayoutView.swift */,
 				87FC53AA1CB24FC50081078A /* SK4TextExportViewController.swift */,
 				87FC53AB1CB24FC50081078A /* SK4TextImportViewController.swift */,
 				87A583981CA8F57300D0E357 /* SK4ActionSheet.swift */,
@@ -467,6 +476,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				870632281CAEA1940017C73A /* SK4ConfigAdmin.swift in Sources */,
+				87FC53BD1CB2514A0081078A /* SK4DivideLayoutUnit.swift in Sources */,
 				87A583A91CA8F57300D0E357 /* SK4TextAttributes.swift in Sources */,
 				870632661CAEA1F70017C73A /* SK4ConfigPickerViewController.swift in Sources */,
 				87A583A41CA8F57300D0E357 /* SK4CollectionViewAdmin.swift in Sources */,
@@ -488,6 +498,7 @@
 				8702169C1CABDE94006137E9 /* SK4ConstraintMaker.swift in Sources */,
 				870632541CAEA1E90017C73A /* SK4ConfigCellColor.swift in Sources */,
 				87A583A81CA8F57300D0E357 /* SK4TableViewAdmin.swift in Sources */,
+				87FC53BC1CB2514A0081078A /* SK4DivideLayoutAdmin.swift in Sources */,
 				8702169D1CABDE94006137E9 /* SK4KeyboardObserver.swift in Sources */,
 				87FC53B51CB250A90081078A /* SK4NSDataExtension.swift in Sources */,
 				87A583A51CA8F57300D0E357 /* SK4ImageContext.swift in Sources */,
@@ -531,6 +542,7 @@
 				870632581CAEA1E90017C73A /* SK4ConfigCellLabel.swift in Sources */,
 				870632451CAEA1DA0017C73A /* SK4ConfigValue.swift in Sources */,
 				870632431CAEA1DA0017C73A /* SK4ConfigUIColor.swift in Sources */,
+				87FC53BE1CB2514A0081078A /* SK4DivideLayoutView.swift in Sources */,
 				87A583A61CA8F57300D0E357 /* SK4OverlayIndicator.swift in Sources */,
 				87A583961CA8F56900D0E357 /* SK4NSAttributedStringExtention.swift in Sources */,
 				870632671CAEA1F70017C73A /* SK4ConfigViewController.swift in Sources */,
