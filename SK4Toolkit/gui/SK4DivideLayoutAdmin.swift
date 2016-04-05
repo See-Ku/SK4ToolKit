@@ -250,8 +250,33 @@ public class SK4DivideLayoutAdmin {
 
 	var viewDic = [String:UIView]()
 
+	/// ステータスバー／ナビゲーションバーの高さを調整
+	public func updateBarHeight(vc: UIViewController) {
+
+		// ステータスバーのサイズを修正
+		let sb_wy = sk4StatusBarHeight()
+		let sb_ar = searchUnitAll(SK4DivideLayoutUnit.TypeName.statusBar)
+		for unit in sb_ar {
+			unit.unitInitSize.height = sb_wy
+		}
+
+		// ナビゲーションバーのサイズを修正
+		let nb_wy = sk4NavigationBarHeight(vc)
+		let nb_ar = searchUnitAll(SK4DivideLayoutUnit.TypeName.navigationBar)
+		for unit in nb_ar {
+			unit.unitInitSize.height = nb_wy
+		}
+	}
+
 	/// レイアウトを全て自動で調整
-	public func updateLayoutAuto() {
+	public func updateLayoutAuto(vc: UIViewController? = nil) {
+
+		// 可能なら各バーの高さを調整
+		if let vc = vc {
+			updateBarHeight(vc)
+		}
+
+		// 各レイアウトのサイズを調整
 		if let baseView = baseView {
 
 			// 自動で環境と向きを選択

@@ -188,6 +188,15 @@ public class SK4DivideLayoutUnit: CustomStringConvertible {
 
 		/// 中を分割する
 		static public let divide = "divide"
+
+		/// その他のユニットのデフォルト名称
+		static public let unit = "unit"
+
+		/// ステータスバー
+		static public let statusBar = "statusBar"
+
+		/// ナビゲーションバー
+		static public let navigationBar = "navigationBar"
 	}
 
 	/// ユニットのキー名
