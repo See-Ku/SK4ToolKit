@@ -188,10 +188,14 @@ extension String {
 			break
 
 		case .Center:
-			rect.origin.y += (rect.height - bound.height) / 2
+			let dif = (rect.height - bound.height) / 2
+			rect.origin.y += dif
+			rect.size.height -= dif
 
 		case .Bottom:
-			rect.origin.y += rect.height - bound.height
+			let dif = rect.height - bound.height
+			rect.origin.y += dif
+			rect.size.height -= dif
 		}
 
 		self.drawInRect(rect, withAttributes: attrs)
