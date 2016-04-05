@@ -34,27 +34,30 @@ public class SK4DivideLayoutAdmin {
 
 		readLayoutFromDictionary(dic)
 	}
-
-	/// バンドルされたJSONで初期化
-	convenience public init(bundle: String) {
+	
+	/// いろいろ自動でバンドルから読み込み
+	convenience public init!(named: String) {
 		self.init()
 
-		readLayoutFromBundle(bundle)
+		let hard = sk4IsPhone() ? "iPhone" : "iPad"
+		let fn = "\(named)-\(hard).divlay"
+
+		if readLayoutFromBundle(fn) == false {
+			return nil
+		}
+	}
+
+	/// バンドルされたJSONで初期化
+	convenience public init!(bundleJson: String) {
+		self.init()
+
+		if readLayoutFromBundle(bundleJson) == false {
+			return nil
+		}
 	}
 
 	// /////////////////////////////////////////////////////////////
 	// MARK: - 入出力
-
-	/// バンドルされたプロパティリストでDivideLayoutを設定
-	public func readLayoutFromBundle(bundle: String) -> Bool {
-		if let path = NSBundle.mainBundle().pathForResource(bundle, ofType: nil) {
-			if let dic = NSDictionary(contentsOfFile: path) {
-				readLayoutFromDictionary(dic)
-				return true
-			}
-		}
-		return false
-	}
 
 	/// DictionaryからDivideLayoutを読み込み
 	public func readLayoutFromDictionary(dic: NSDictionary) {
@@ -75,6 +78,34 @@ public class SK4DivideLayoutAdmin {
 			}
 		}
 	}
+
+	/// バンドルされたJSONでDivideLayoutを設定
+	public func readLayoutFromBundle(bundleJson: String) -> Bool {
+		if let path = NSBundle.mainBundle().pathForResource(bundleJson, ofType: nil) {
+			if let json = String.sk4ReadFile(path) {
+				if let dic = json.sk4JsonToDic() {
+					readLayoutFromDictionary(dic)
+					return true
+				}
+			}
+		}
+		return false
+	}
+
+/*
+	// プロパティリスト形式は廃止
+
+	/// バンドルされたプロパティリストでDivideLayoutを設定
+	public func readLayoutFromBundle(bundle: String) -> Bool {
+		if let path = NSBundle.mainBundle().pathForResource(bundle, ofType: nil) {
+			if let dic = NSDictionary(contentsOfFile: path) {
+				readLayoutFromDictionary(dic)
+				return true
+			}
+		}
+		return false
+	}
+*/
 
 	/// DivideLayoutをDictionaryに保存
 	public func writeLayoutToDictionary() -> NSMutableDictionary {
