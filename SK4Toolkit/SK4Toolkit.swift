@@ -79,6 +79,15 @@ public func sk4AutoLayoutOff(view: UIView) {
 	}
 }
 
+/// ステータスバーの高さを取得
+public func sk4StatusBarHeight() -> CGFloat {
+	return UIApplication.sharedApplication().statusBarFrame.size.height
+}
+
+/// ナビゲーションバーの高さを取得
+public func sk4NavigationBarHeight(vc: UIViewController) -> CGFloat {
+	return vc.navigationController?.navigationBar.frame.size.height ?? 44
+}
 
 
 // /////////////////////////////////////////////////////////////
