@@ -11,7 +11,7 @@ import UIKit
 // /////////////////////////////////////////////////////////////
 // MARK: - 各種定数
 
-public let SK4ToolKitVersion = "2.7.1"
+public let SK4ToolKitVersion = "2.7.2"
 
 
 // /////////////////////////////////////////////////////////////
@@ -268,7 +268,11 @@ public func sk4DebugLog(@autoclosure message:  () -> String, function: String = 
 public func sk4VersionString() -> String {
 	let bundle = NSBundle.mainBundle()
 	if let str = bundle.objectForInfoDictionaryKey("CFBundleShortVersionString") as? String {
-		return str
+		#if DEBUG
+			return str + "[D]"
+		#else
+			return str
+		#endif
 	} else {
 		assertionFailure("objectForInfoDictionaryKey error: CFBundleShortVersionString")
 		return ""
