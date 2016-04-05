@@ -324,6 +324,15 @@ public class SK4DivideLayoutUnit: CustomStringConvertible {
 		return (unitType == TypeName.divide)
 	}
 
+	/// ステータスバー／ナビゲーションバーか？
+	public func isBar() -> Bool {
+		if unitType == TypeName.statusBar || unitType == TypeName.navigationBar {
+			return true
+		} else {
+			return false
+		}
+	}
+
 	/// ユニットは非表示か？
 	public func isHidden() -> Bool {
 

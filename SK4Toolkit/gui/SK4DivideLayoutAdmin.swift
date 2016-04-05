@@ -320,11 +320,13 @@ public class SK4DivideLayoutAdmin {
 
 	/// ユニットを表示
 	func displayUnit(unit: SK4DivideLayoutUnit, parent: UIView) {
-		if unit.isSpace() {
 
-			// 何もしない
+		// スペースと各バーの時は何もしない
+		if unit.isSpace() || unit.isBar() {
+			return
+		}
 
-		} else if unit.isDivide() {
+		if unit.isDivide() {
 
 			// 子ユニットを表示
 			for child in unit.children {
