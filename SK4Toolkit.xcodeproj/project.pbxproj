@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8701D0971CB61B91003A9E81 /* FileSizeStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8701D0961CB61B91003A9E81 /* FileSizeStringTests.swift */; };
 		8702169C1CABDE94006137E9 /* SK4ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8702169A1CABDE94006137E9 /* SK4ConstraintMaker.swift */; };
 		8702169D1CABDE94006137E9 /* SK4KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8702169B1CABDE94006137E9 /* SK4KeyboardObserver.swift */; };
 		870216A11CABDF7A006137E9 /* SK4TargetAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8702169E1CABDF7A006137E9 /* SK4TargetAction.swift */; };
@@ -100,6 +101,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8701D0961CB61B91003A9E81 /* FileSizeStringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileSizeStringTests.swift; sourceTree = "<group>"; };
 		8702169A1CABDE94006137E9 /* SK4ConstraintMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SK4ConstraintMaker.swift; path = gui/SK4ConstraintMaker.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		8702169B1CABDE94006137E9 /* SK4KeyboardObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SK4KeyboardObserver.swift; path = gui/SK4KeyboardObserver.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		8702169E1CABDF7A006137E9 /* SK4TargetAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4TargetAction.swift; path = gui/SK4TargetAction.swift; sourceTree = "<group>"; };
@@ -364,6 +366,7 @@
 				8760C8861CAF62460008C0F7 /* ConfigAdminTests.swift */,
 				8760C8871CAF62460008C0F7 /* ConfigValueTests.swift */,
 				87FC53C31CB2530A0081078A /* DivideLayoutTests.swift */,
+				8701D0961CB61B91003A9E81 /* FileSizeStringTests.swift */,
 				87BB45ED1CA2A1F100F0BC50 /* Info.plist */,
 				87FC53C01CB252D90081078A /* NSDataExtensionTests.swift */,
 				87632DC11CAC0ACA004D31E0 /* PauseFlagTests.swift */,
@@ -560,6 +563,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87FC53C21CB252D90081078A /* NSDataExtensionTests.swift in Sources */,
+				8701D0971CB61B91003A9E81 /* FileSizeStringTests.swift in Sources */,
 				87632DC21CAC0ACA004D31E0 /* PauseFlagTests.swift in Sources */,
 				87FC53C41CB2530A0081078A /* DivideLayoutTests.swift in Sources */,
 				87BB45EC1CA2A1F100F0BC50 /* SK4ToolkitTests.swift in Sources */,
