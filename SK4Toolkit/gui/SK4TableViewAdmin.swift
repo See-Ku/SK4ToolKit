@@ -107,6 +107,16 @@ public class SK4TableViewAdmin: NSObject, UITableViewDelegate, UITableViewDataSo
 		return nil
 	}
 
+	/// ヘッダーの高さを返す
+	public func heightForHeader(section: Int) -> CGFloat {
+		return UITableViewAutomaticDimension
+	}
+
+	/// ヘッダーのViewを返す
+	public func viewForHeader(section: Int) -> UIView? {
+		return nil
+	}
+
 	/// フッターの文字列を返す
 	public func titleForFooter(section: Int) -> String? {
 		return nil
@@ -182,9 +192,23 @@ public class SK4TableViewAdmin: NSObject, UITableViewDelegate, UITableViewDataSo
 		return cell
 	}
 
+	// /////////////////////////////////////////////////////////////
+	// MARK: - UITableViewDataSource / ヘッダー関係
+
 	public func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
 		return titleForHeader(section)
 	}
+
+	public func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+		return heightForHeader(section)
+	}
+
+	public func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+		return viewForHeader(section)
+	}
+
+	// /////////////////////////////////////////////////////////////
+	// MARK: - UITableViewDataSource / フッター関係
 
 	public func tableView(tableView: UITableView, titleForFooterInSection section: Int) -> String? {
 		return titleForFooter(section)
