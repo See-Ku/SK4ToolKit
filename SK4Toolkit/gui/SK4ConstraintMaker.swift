@@ -76,6 +76,30 @@ public class SK4ConstraintMaker {
 		let con = NSLayoutConstraint(item: addItem, attribute: .CenterY, relatedBy: .Equal, toItem: baseItem, attribute: .CenterY, multiplier: 1, constant: gap)
 		constraints.append(con)
 	}
+
+	/// 最大幅の指定付きで、上に覆い被さる制約を作成
+	public func addOverlay(addItem: UIView, baseItem: UIView, maxWidth: Int, edge: Int = 0, name: String = "over") {
+
+		// 指定されたViewに関するAuto Layoutを削除
+		removeConstraints(addItem, baseItem: baseItem)
+
+		// 新しくAuto Layoutを設定
+		addViewDic(name, view: addItem)
+
+		addVisualFormat("V:|-[\(name)]-|")
+		addVisualFormat("H:|-(\(edge)@750)-[\(name)(<=\(maxWidth))]-(\(edge)@750)-|")
+		addCenterEqualX(addItem: addItem, baseItem: baseItem)
+	}
+
+	// /////////////////////////////////////////////////////////////
+	// MARK: - その他
+
+	/// 特定のViewに関する制約を削除
+	public func removeConstraints(removeItem: UIView, baseItem: UIView) {
+		let ar = baseItem.constraints.filter { co in (co.firstItem === removeItem || co.secondItem === removeItem) }
+		baseItem.removeConstraints(ar)
+	}
+
 }
 
 // eof
