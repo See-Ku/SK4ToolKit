@@ -163,6 +163,14 @@ extension String {
 	}
 
 	// /////////////////////////////////////////////////////////////
+	// MARK: - ファイル名
+
+	/// ディレクトリの文字列にファイル名を連結
+	public func sk4AppendingPath(fn: String) -> String {
+		return nsString.stringByAppendingPathComponent(fn)
+	}
+
+	// /////////////////////////////////////////////////////////////
 	// MARK: - 描画
 
 	/// 描画範囲を示す矩形を取得

@@ -98,6 +98,12 @@ public func sk4GetDocumentDirectory() -> String {
 	return sk4GetSearchPathDirectory(.DocumentDirectory)
 }
 
+/// ドキュメントディレクトリへのパスにファイル名を連結して取得
+public func sk4GetDocumentDirectory(fn: String) -> String {
+	let path = sk4GetDocumentDirectory()
+	return path.sk4AppendingPath(fn)
+}
+
 /// ライブラリディレクトリへのパスを取得
 public func sk4GetLibraryDirectory() -> String {
 	return sk4GetSearchPathDirectory(.LibraryDirectory)
@@ -186,6 +192,52 @@ public func sk4FileListAtPath(path: String, ext: String? = nil) -> [String] {
 	}
 }
 
+/// ファイルの情報を取得
+public func sk4FileAttributesAtPath(path: String) -> NSDictionary? {
+	let man = NSFileManager.defaultManager()
+	do {
+		let info = try man.attributesOfItemAtPath(path) as NSDictionary
+		return info
+	} catch {
+		return nil
+	}
+}
+
+/// ファイルサイズを文字列に変換
+public func sk4FileSizeString(size: UInt64) -> String {
+
+	// 数字部分が3桁になるように調整したバージョン
+
+	// ※実はZBが使われる事はない
+	let units = ["bytes", "KB", "MB", "GB", "TB", "PB", "EB", "ZB"]
+
+	var size = size
+	for i in 0..<units.count-1 {
+
+		// 3桁以下ならそのまま出力
+		if size < 1000 {
+			return "\(size) \(units[i])"
+		}
+
+		// 次の単位で2桁未満か？
+		if size < 1024 * 10 {
+
+			// 小数点以下1桁で四捨五入
+			let tmp = round((Double(size) * 10) / 1024) / 10
+			let num: String
+			if tmp < 10.0 {
+				num = String(format: "%0.1f", tmp)
+			} else {
+				num = String(format: "%0.0f", tmp)
+			}
+			return "\(num) \(units[i+1])"
+		}
+
+		size /= 1024
+	}
+
+	return "\(size) YB"
+}
 
 
 // /////////////////////////////////////////////////////////////
