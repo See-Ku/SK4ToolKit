@@ -76,6 +76,8 @@
 		87A62D5C1CC3B4BC00F18ECD /* SK4ConfigCellColorIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A62D5B1CC3B4BC00F18ECD /* SK4ConfigCellColorIndex.swift */; };
 		87A62D5E1CC3B63E00F18ECD /* SK4NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A62D5D1CC3B63E00F18ECD /* SK4NSDateExtension.swift */; };
 		87A62D601CC3BBE400F18ECD /* SK4DateRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A62D5F1CC3BBE400F18ECD /* SK4DateRange.swift */; };
+		87A62D621CC3C13B00F18ECD /* NSDateExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A62D611CC3C13B00F18ECD /* NSDateExtensionTests.swift */; };
+		87A62D641CC3C1B400F18ECD /* DateRangeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A62D631CC3C1B400F18ECD /* DateRangeTests.swift */; };
 		87BB45E01CA2A1F100F0BC50 /* SK4Toolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = 87BB45DF1CA2A1F100F0BC50 /* SK4Toolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		87BB45E71CA2A1F100F0BC50 /* SK4Toolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87BB45DC1CA2A1F100F0BC50 /* SK4Toolkit.framework */; };
 		87BB45EC1CA2A1F100F0BC50 /* SK4ToolkitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BB45EB1CA2A1F100F0BC50 /* SK4ToolkitTests.swift */; };
@@ -174,6 +176,8 @@
 		87A62D5B1CC3B4BC00F18ECD /* SK4ConfigCellColorIndex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ConfigCellColorIndex.swift; path = config/cell/SK4ConfigCellColorIndex.swift; sourceTree = "<group>"; };
 		87A62D5D1CC3B63E00F18ECD /* SK4NSDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4NSDateExtension.swift; path = extention/SK4NSDateExtension.swift; sourceTree = "<group>"; };
 		87A62D5F1CC3BBE400F18ECD /* SK4DateRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4DateRange.swift; path = core/SK4DateRange.swift; sourceTree = "<group>"; };
+		87A62D611CC3C13B00F18ECD /* NSDateExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtensionTests.swift; sourceTree = "<group>"; };
+		87A62D631CC3C1B400F18ECD /* DateRangeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateRangeTests.swift; sourceTree = "<group>"; };
 		87BB45DC1CA2A1F100F0BC50 /* SK4Toolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SK4Toolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87BB45DF1CA2A1F100F0BC50 /* SK4Toolkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SK4Toolkit.h; sourceTree = "<group>"; };
 		87BB45E11CA2A1F100F0BC50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -377,10 +381,12 @@
 			children = (
 				8760C8861CAF62460008C0F7 /* ConfigAdminTests.swift */,
 				8760C8871CAF62460008C0F7 /* ConfigValueTests.swift */,
+				87A62D631CC3C1B400F18ECD /* DateRangeTests.swift */,
 				87FC53C31CB2530A0081078A /* DivideLayoutTests.swift */,
 				8701D0961CB61B91003A9E81 /* FileSizeStringTests.swift */,
 				87BB45ED1CA2A1F100F0BC50 /* Info.plist */,
 				87FC53C01CB252D90081078A /* NSDataExtensionTests.swift */,
+				87A62D611CC3C13B00F18ECD /* NSDateExtensionTests.swift */,
 				87632DC11CAC0ACA004D31E0 /* PauseFlagTests.swift */,
 				87BB45EB1CA2A1F100F0BC50 /* SK4ToolkitTests.swift */,
 				87632DC31CAC0BCD004D31E0 /* StringExtensionTests.swift */,
@@ -578,6 +584,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87A62D621CC3C13B00F18ECD /* NSDateExtensionTests.swift in Sources */,
 				87FC53C21CB252D90081078A /* NSDataExtensionTests.swift in Sources */,
 				8701D0971CB61B91003A9E81 /* FileSizeStringTests.swift in Sources */,
 				87632DC21CAC0ACA004D31E0 /* PauseFlagTests.swift in Sources */,
@@ -586,6 +593,7 @@
 				8760C8891CAF62460008C0F7 /* ConfigValueTests.swift in Sources */,
 				87632DC41CAC0BCD004D31E0 /* StringExtensionTests.swift in Sources */,
 				8760C8881CAF62460008C0F7 /* ConfigAdminTests.swift in Sources */,
+				87A62D641CC3C1B400F18ECD /* DateRangeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
