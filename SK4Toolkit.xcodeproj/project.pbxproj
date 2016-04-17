@@ -18,40 +18,6 @@
 		870216A91CABE128006137E9 /* SK4UIColorExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870216A81CABE128006137E9 /* SK4UIColorExtention.swift */; };
 		870216AB1CABE5EE006137E9 /* SK4ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870216AA1CABE5EE006137E9 /* SK4ColorPicker.swift */; };
 		870632231CAEA15D0017C73A /* SK4TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870632221CAEA15D0017C73A /* SK4TableViewController.swift */; };
-		870632281CAEA1940017C73A /* SK4ConfigAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870632251CAEA1940017C73A /* SK4ConfigAdmin.swift */; };
-		870632291CAEA1940017C73A /* SK4ConfigTableViewAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870632261CAEA1940017C73A /* SK4ConfigTableViewAdmin.swift */; };
-		8706322A1CAEA1940017C73A /* SK4ConfigUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870632271CAEA1940017C73A /* SK4ConfigUserDefaults.swift */; };
-		8706323A1CAEA1DA0017C73A /* SK4ConfigAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8706322E1CAEA1DA0017C73A /* SK4ConfigAction.swift */; };
-		8706323B1CAEA1DA0017C73A /* SK4ConfigBool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8706322F1CAEA1DA0017C73A /* SK4ConfigBool.swift */; };
-		8706323C1CAEA1DA0017C73A /* SK4ConfigCGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870632301CAEA1DA0017C73A /* SK4ConfigCGFloat.swift */; };
-		8706323D1CAEA1DA0017C73A /* SK4ConfigGenerics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870632311CAEA1DA0017C73A /* SK4ConfigGenerics.swift */; };
-		8706323E1CAEA1DA0017C73A /* SK4ConfigIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870632321CAEA1DA0017C73A /* SK4ConfigIndex.swift */; };
-		8706323F1CAEA1DA0017C73A /* SK4ConfigInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870632331CAEA1DA0017C73A /* SK4ConfigInt.swift */; };
-		870632401CAEA1DA0017C73A /* SK4ConfigMulti.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870632341CAEA1DA0017C73A /* SK4ConfigMulti.swift */; };
-		870632411CAEA1DA0017C73A /* SK4ConfigNSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870632351CAEA1DA0017C73A /* SK4ConfigNSDate.swift */; };
-		870632421CAEA1DA0017C73A /* SK4ConfigString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870632361CAEA1DA0017C73A /* SK4ConfigString.swift */; };
-		870632431CAEA1DA0017C73A /* SK4ConfigUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870632371CAEA1DA0017C73A /* SK4ConfigUIColor.swift */; };
-		870632441CAEA1DA0017C73A /* SK4ConfigUInt64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870632381CAEA1DA0017C73A /* SK4ConfigUInt64.swift */; };
-		870632451CAEA1DA0017C73A /* SK4ConfigValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870632391CAEA1DA0017C73A /* SK4ConfigValue.swift */; };
-		870632521CAEA1E90017C73A /* SK4ConfigCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870632461CAEA1E90017C73A /* SK4ConfigCell.swift */; };
-		870632531CAEA1E90017C73A /* SK4ConfigCellChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870632471CAEA1E90017C73A /* SK4ConfigCellChoice.swift */; };
-		870632541CAEA1E90017C73A /* SK4ConfigCellColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870632481CAEA1E90017C73A /* SK4ConfigCellColor.swift */; };
-		870632551CAEA1E90017C73A /* SK4ConfigCellDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870632491CAEA1E90017C73A /* SK4ConfigCellDate.swift */; };
-		870632561CAEA1E90017C73A /* SK4ConfigCellDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8706324A1CAEA1E90017C73A /* SK4ConfigCellDirectory.swift */; };
-		870632571CAEA1E90017C73A /* SK4ConfigCellExec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8706324B1CAEA1E90017C73A /* SK4ConfigCellExec.swift */; };
-		870632581CAEA1E90017C73A /* SK4ConfigCellLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8706324C1CAEA1E90017C73A /* SK4ConfigCellLabel.swift */; };
-		870632591CAEA1E90017C73A /* SK4ConfigCellPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8706324D1CAEA1E90017C73A /* SK4ConfigCellPicker.swift */; };
-		8706325A1CAEA1E90017C73A /* SK4ConfigCellSegmented.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8706324E1CAEA1E90017C73A /* SK4ConfigCellSegmented.swift */; };
-		8706325B1CAEA1E90017C73A /* SK4ConfigCellSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8706324F1CAEA1E90017C73A /* SK4ConfigCellSwitch.swift */; };
-		8706325C1CAEA1E90017C73A /* SK4ConfigCellTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870632501CAEA1E90017C73A /* SK4ConfigCellTextField.swift */; };
-		8706325D1CAEA1E90017C73A /* SK4ConfigCellTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870632511CAEA1E90017C73A /* SK4ConfigCellTextView.swift */; };
-		870632631CAEA1F70017C73A /* SK4ConfigChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8706325E1CAEA1F70017C73A /* SK4ConfigChoiceViewController.swift */; };
-		870632641CAEA1F70017C73A /* SK4ConfigColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8706325F1CAEA1F70017C73A /* SK4ConfigColorViewController.swift */; };
-		870632651CAEA1F70017C73A /* SK4ConfigDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870632601CAEA1F70017C73A /* SK4ConfigDateViewController.swift */; };
-		870632661CAEA1F70017C73A /* SK4ConfigPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870632611CAEA1F70017C73A /* SK4ConfigPickerViewController.swift */; };
-		870632671CAEA1F70017C73A /* SK4ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870632621CAEA1F70017C73A /* SK4ConfigViewController.swift */; };
-		8760C8881CAF62460008C0F7 /* ConfigAdminTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8760C8861CAF62460008C0F7 /* ConfigAdminTests.swift */; };
-		8760C8891CAF62460008C0F7 /* ConfigValueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8760C8871CAF62460008C0F7 /* ConfigValueTests.swift */; };
 		87632DC21CAC0ACA004D31E0 /* PauseFlagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87632DC11CAC0ACA004D31E0 /* PauseFlagTests.swift */; };
 		87632DC41CAC0BCD004D31E0 /* StringExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87632DC31CAC0BCD004D31E0 /* StringExtensionTests.swift */; };
 		87A583841CA8F51300D0E357 /* SK4Toolkit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A583831CA8F51300D0E357 /* SK4Toolkit.swift */; };
@@ -73,7 +39,6 @@
 		87A583A81CA8F57300D0E357 /* SK4TableViewAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A5839F1CA8F57300D0E357 /* SK4TableViewAdmin.swift */; };
 		87A583A91CA8F57300D0E357 /* SK4TextAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A583A01CA8F57300D0E357 /* SK4TextAttributes.swift */; };
 		87A62D5A1CC39F3F00F18ECD /* SK4UITableViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A62D591CC39F3F00F18ECD /* SK4UITableViewExtention.swift */; };
-		87A62D5C1CC3B4BC00F18ECD /* SK4ConfigCellColorIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A62D5B1CC3B4BC00F18ECD /* SK4ConfigCellColorIndex.swift */; };
 		87A62D5E1CC3B63E00F18ECD /* SK4NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A62D5D1CC3B63E00F18ECD /* SK4NSDateExtension.swift */; };
 		87A62D601CC3BBE400F18ECD /* SK4DateRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A62D5F1CC3BBE400F18ECD /* SK4DateRange.swift */; };
 		87A62D621CC3C13B00F18ECD /* NSDateExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A62D611CC3C13B00F18ECD /* NSDateExtensionTests.swift */; };
@@ -118,40 +83,6 @@
 		870216A81CABE128006137E9 /* SK4UIColorExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4UIColorExtention.swift; path = extention/SK4UIColorExtention.swift; sourceTree = "<group>"; };
 		870216AA1CABE5EE006137E9 /* SK4ColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = SK4ColorPicker.swift; path = gui/SK4ColorPicker.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		870632221CAEA15D0017C73A /* SK4TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4TableViewController.swift; path = gui/SK4TableViewController.swift; sourceTree = "<group>"; };
-		870632251CAEA1940017C73A /* SK4ConfigAdmin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ConfigAdmin.swift; path = config/SK4ConfigAdmin.swift; sourceTree = "<group>"; };
-		870632261CAEA1940017C73A /* SK4ConfigTableViewAdmin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ConfigTableViewAdmin.swift; path = config/SK4ConfigTableViewAdmin.swift; sourceTree = "<group>"; };
-		870632271CAEA1940017C73A /* SK4ConfigUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ConfigUserDefaults.swift; path = config/SK4ConfigUserDefaults.swift; sourceTree = "<group>"; };
-		8706322E1CAEA1DA0017C73A /* SK4ConfigAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ConfigAction.swift; path = config/value/SK4ConfigAction.swift; sourceTree = "<group>"; };
-		8706322F1CAEA1DA0017C73A /* SK4ConfigBool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ConfigBool.swift; path = config/value/SK4ConfigBool.swift; sourceTree = "<group>"; };
-		870632301CAEA1DA0017C73A /* SK4ConfigCGFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ConfigCGFloat.swift; path = config/value/SK4ConfigCGFloat.swift; sourceTree = "<group>"; };
-		870632311CAEA1DA0017C73A /* SK4ConfigGenerics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ConfigGenerics.swift; path = config/value/SK4ConfigGenerics.swift; sourceTree = "<group>"; };
-		870632321CAEA1DA0017C73A /* SK4ConfigIndex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ConfigIndex.swift; path = config/value/SK4ConfigIndex.swift; sourceTree = "<group>"; };
-		870632331CAEA1DA0017C73A /* SK4ConfigInt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ConfigInt.swift; path = config/value/SK4ConfigInt.swift; sourceTree = "<group>"; };
-		870632341CAEA1DA0017C73A /* SK4ConfigMulti.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ConfigMulti.swift; path = config/value/SK4ConfigMulti.swift; sourceTree = "<group>"; };
-		870632351CAEA1DA0017C73A /* SK4ConfigNSDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ConfigNSDate.swift; path = config/value/SK4ConfigNSDate.swift; sourceTree = "<group>"; };
-		870632361CAEA1DA0017C73A /* SK4ConfigString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ConfigString.swift; path = config/value/SK4ConfigString.swift; sourceTree = "<group>"; };
-		870632371CAEA1DA0017C73A /* SK4ConfigUIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ConfigUIColor.swift; path = config/value/SK4ConfigUIColor.swift; sourceTree = "<group>"; };
-		870632381CAEA1DA0017C73A /* SK4ConfigUInt64.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ConfigUInt64.swift; path = config/value/SK4ConfigUInt64.swift; sourceTree = "<group>"; };
-		870632391CAEA1DA0017C73A /* SK4ConfigValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ConfigValue.swift; path = config/value/SK4ConfigValue.swift; sourceTree = "<group>"; };
-		870632461CAEA1E90017C73A /* SK4ConfigCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ConfigCell.swift; path = config/cell/SK4ConfigCell.swift; sourceTree = "<group>"; };
-		870632471CAEA1E90017C73A /* SK4ConfigCellChoice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ConfigCellChoice.swift; path = config/cell/SK4ConfigCellChoice.swift; sourceTree = "<group>"; };
-		870632481CAEA1E90017C73A /* SK4ConfigCellColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ConfigCellColor.swift; path = config/cell/SK4ConfigCellColor.swift; sourceTree = "<group>"; };
-		870632491CAEA1E90017C73A /* SK4ConfigCellDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ConfigCellDate.swift; path = config/cell/SK4ConfigCellDate.swift; sourceTree = "<group>"; };
-		8706324A1CAEA1E90017C73A /* SK4ConfigCellDirectory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ConfigCellDirectory.swift; path = config/cell/SK4ConfigCellDirectory.swift; sourceTree = "<group>"; };
-		8706324B1CAEA1E90017C73A /* SK4ConfigCellExec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ConfigCellExec.swift; path = config/cell/SK4ConfigCellExec.swift; sourceTree = "<group>"; };
-		8706324C1CAEA1E90017C73A /* SK4ConfigCellLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ConfigCellLabel.swift; path = config/cell/SK4ConfigCellLabel.swift; sourceTree = "<group>"; };
-		8706324D1CAEA1E90017C73A /* SK4ConfigCellPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ConfigCellPicker.swift; path = config/cell/SK4ConfigCellPicker.swift; sourceTree = "<group>"; };
-		8706324E1CAEA1E90017C73A /* SK4ConfigCellSegmented.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ConfigCellSegmented.swift; path = config/cell/SK4ConfigCellSegmented.swift; sourceTree = "<group>"; };
-		8706324F1CAEA1E90017C73A /* SK4ConfigCellSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ConfigCellSwitch.swift; path = config/cell/SK4ConfigCellSwitch.swift; sourceTree = "<group>"; };
-		870632501CAEA1E90017C73A /* SK4ConfigCellTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ConfigCellTextField.swift; path = config/cell/SK4ConfigCellTextField.swift; sourceTree = "<group>"; };
-		870632511CAEA1E90017C73A /* SK4ConfigCellTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ConfigCellTextView.swift; path = config/cell/SK4ConfigCellTextView.swift; sourceTree = "<group>"; };
-		8706325E1CAEA1F70017C73A /* SK4ConfigChoiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ConfigChoiceViewController.swift; path = config/vc/SK4ConfigChoiceViewController.swift; sourceTree = "<group>"; };
-		8706325F1CAEA1F70017C73A /* SK4ConfigColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ConfigColorViewController.swift; path = config/vc/SK4ConfigColorViewController.swift; sourceTree = "<group>"; };
-		870632601CAEA1F70017C73A /* SK4ConfigDateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ConfigDateViewController.swift; path = config/vc/SK4ConfigDateViewController.swift; sourceTree = "<group>"; };
-		870632611CAEA1F70017C73A /* SK4ConfigPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ConfigPickerViewController.swift; path = config/vc/SK4ConfigPickerViewController.swift; sourceTree = "<group>"; };
-		870632621CAEA1F70017C73A /* SK4ConfigViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ConfigViewController.swift; path = config/vc/SK4ConfigViewController.swift; sourceTree = "<group>"; };
-		8760C8861CAF62460008C0F7 /* ConfigAdminTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigAdminTests.swift; sourceTree = "<group>"; };
-		8760C8871CAF62460008C0F7 /* ConfigValueTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigValueTests.swift; sourceTree = "<group>"; };
 		87632DC11CAC0ACA004D31E0 /* PauseFlagTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PauseFlagTests.swift; sourceTree = "<group>"; };
 		87632DC31CAC0BCD004D31E0 /* StringExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensionTests.swift; sourceTree = "<group>"; };
 		87A583831CA8F51300D0E357 /* SK4Toolkit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SK4Toolkit.swift; sourceTree = "<group>"; };
@@ -173,7 +104,6 @@
 		87A5839F1CA8F57300D0E357 /* SK4TableViewAdmin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4TableViewAdmin.swift; path = gui/SK4TableViewAdmin.swift; sourceTree = "<group>"; };
 		87A583A01CA8F57300D0E357 /* SK4TextAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4TextAttributes.swift; path = gui/SK4TextAttributes.swift; sourceTree = "<group>"; };
 		87A62D591CC39F3F00F18ECD /* SK4UITableViewExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4UITableViewExtention.swift; path = extention/SK4UITableViewExtention.swift; sourceTree = "<group>"; };
-		87A62D5B1CC3B4BC00F18ECD /* SK4ConfigCellColorIndex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ConfigCellColorIndex.swift; path = config/cell/SK4ConfigCellColorIndex.swift; sourceTree = "<group>"; };
 		87A62D5D1CC3B63E00F18ECD /* SK4NSDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4NSDateExtension.swift; path = extention/SK4NSDateExtension.swift; sourceTree = "<group>"; };
 		87A62D5F1CC3BBE400F18ECD /* SK4DateRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4DateRange.swift; path = core/SK4DateRange.swift; sourceTree = "<group>"; };
 		87A62D611CC3C13B00F18ECD /* NSDateExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtensionTests.swift; sourceTree = "<group>"; };
@@ -218,70 +148,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		870632241CAEA1670017C73A /* config */ = {
-			isa = PBXGroup;
-			children = (
-				8706322B1CAEA1A10017C73A /* value */,
-				8706322C1CAEA1AB0017C73A /* cell */,
-				8706322D1CAEA1B30017C73A /* vc */,
-				870632251CAEA1940017C73A /* SK4ConfigAdmin.swift */,
-				870632261CAEA1940017C73A /* SK4ConfigTableViewAdmin.swift */,
-				870632271CAEA1940017C73A /* SK4ConfigUserDefaults.swift */,
-			);
-			name = config;
-			sourceTree = "<group>";
-		};
-		8706322B1CAEA1A10017C73A /* value */ = {
-			isa = PBXGroup;
-			children = (
-				8706322E1CAEA1DA0017C73A /* SK4ConfigAction.swift */,
-				8706322F1CAEA1DA0017C73A /* SK4ConfigBool.swift */,
-				870632301CAEA1DA0017C73A /* SK4ConfigCGFloat.swift */,
-				870632311CAEA1DA0017C73A /* SK4ConfigGenerics.swift */,
-				870632321CAEA1DA0017C73A /* SK4ConfigIndex.swift */,
-				870632331CAEA1DA0017C73A /* SK4ConfigInt.swift */,
-				870632341CAEA1DA0017C73A /* SK4ConfigMulti.swift */,
-				870632351CAEA1DA0017C73A /* SK4ConfigNSDate.swift */,
-				870632361CAEA1DA0017C73A /* SK4ConfigString.swift */,
-				870632371CAEA1DA0017C73A /* SK4ConfigUIColor.swift */,
-				870632381CAEA1DA0017C73A /* SK4ConfigUInt64.swift */,
-				870632391CAEA1DA0017C73A /* SK4ConfigValue.swift */,
-			);
-			name = value;
-			sourceTree = "<group>";
-		};
-		8706322C1CAEA1AB0017C73A /* cell */ = {
-			isa = PBXGroup;
-			children = (
-				870632461CAEA1E90017C73A /* SK4ConfigCell.swift */,
-				87A62D5B1CC3B4BC00F18ECD /* SK4ConfigCellColorIndex.swift */,
-				870632471CAEA1E90017C73A /* SK4ConfigCellChoice.swift */,
-				870632481CAEA1E90017C73A /* SK4ConfigCellColor.swift */,
-				870632491CAEA1E90017C73A /* SK4ConfigCellDate.swift */,
-				8706324A1CAEA1E90017C73A /* SK4ConfigCellDirectory.swift */,
-				8706324B1CAEA1E90017C73A /* SK4ConfigCellExec.swift */,
-				8706324C1CAEA1E90017C73A /* SK4ConfigCellLabel.swift */,
-				8706324D1CAEA1E90017C73A /* SK4ConfigCellPicker.swift */,
-				8706324E1CAEA1E90017C73A /* SK4ConfigCellSegmented.swift */,
-				8706324F1CAEA1E90017C73A /* SK4ConfigCellSwitch.swift */,
-				870632501CAEA1E90017C73A /* SK4ConfigCellTextField.swift */,
-				870632511CAEA1E90017C73A /* SK4ConfigCellTextView.swift */,
-			);
-			name = cell;
-			sourceTree = "<group>";
-		};
-		8706322D1CAEA1B30017C73A /* vc */ = {
-			isa = PBXGroup;
-			children = (
-				8706325E1CAEA1F70017C73A /* SK4ConfigChoiceViewController.swift */,
-				8706325F1CAEA1F70017C73A /* SK4ConfigColorViewController.swift */,
-				870632601CAEA1F70017C73A /* SK4ConfigDateViewController.swift */,
-				870632611CAEA1F70017C73A /* SK4ConfigPickerViewController.swift */,
-				870632621CAEA1F70017C73A /* SK4ConfigViewController.swift */,
-			);
-			name = vc;
-			sourceTree = "<group>";
-		};
 		87A583851CA8F51E00D0E357 /* core */ = {
 			isa = PBXGroup;
 			children = (
@@ -367,7 +233,6 @@
 			children = (
 				87A583831CA8F51300D0E357 /* SK4Toolkit.swift */,
 				87BB45DF1CA2A1F100F0BC50 /* SK4Toolkit.h */,
-				870632241CAEA1670017C73A /* config */,
 				87A583851CA8F51E00D0E357 /* core */,
 				87A583871CA8F54400D0E357 /* extention */,
 				87A583861CA8F52800D0E357 /* gui */,
@@ -379,8 +244,6 @@
 		87BB45EA1CA2A1F100F0BC50 /* SK4ToolkitTests */ = {
 			isa = PBXGroup;
 			children = (
-				8760C8861CAF62460008C0F7 /* ConfigAdminTests.swift */,
-				8760C8871CAF62460008C0F7 /* ConfigValueTests.swift */,
 				87A62D631CC3C1B400F18ECD /* DateRangeTests.swift */,
 				87FC53C31CB2530A0081078A /* DivideLayoutTests.swift */,
 				8701D0961CB61B91003A9E81 /* FileSizeStringTests.swift */,
@@ -502,81 +365,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				870632281CAEA1940017C73A /* SK4ConfigAdmin.swift in Sources */,
 				87FC53BD1CB2514A0081078A /* SK4DivideLayoutUnit.swift in Sources */,
 				87A583A91CA8F57300D0E357 /* SK4TextAttributes.swift in Sources */,
-				870632661CAEA1F70017C73A /* SK4ConfigPickerViewController.swift in Sources */,
 				87A583A41CA8F57300D0E357 /* SK4CollectionViewAdmin.swift in Sources */,
-				870632641CAEA1F70017C73A /* SK4ConfigColorViewController.swift in Sources */,
 				87A583A31CA8F57300D0E357 /* SK4BorderButton.swift in Sources */,
-				8706323B1CAEA1DA0017C73A /* SK4ConfigBool.swift in Sources */,
-				8706323C1CAEA1DA0017C73A /* SK4ConfigCGFloat.swift in Sources */,
 				87A62D5A1CC39F3F00F18ECD /* SK4UITableViewExtention.swift in Sources */,
-				8706323D1CAEA1DA0017C73A /* SK4ConfigGenerics.swift in Sources */,
-				8706323E1CAEA1DA0017C73A /* SK4ConfigIndex.swift in Sources */,
-				8706325C1CAEA1E90017C73A /* SK4ConfigCellTextField.swift in Sources */,
 				87A583901CA8F55D00D0E357 /* SK4LazyTimer.swift in Sources */,
-				8706325D1CAEA1E90017C73A /* SK4ConfigCellTextView.swift in Sources */,
 				870216A71CABE0B0006137E9 /* SK4PauseFlag.swift in Sources */,
 				870216AB1CABE5EE006137E9 /* SK4ColorPicker.swift in Sources */,
 				87A583921CA8F55D00D0E357 /* SK4Notify.swift in Sources */,
-				870632291CAEA1940017C73A /* SK4ConfigTableViewAdmin.swift in Sources */,
 				870216A31CABDF7A006137E9 /* SK4TextViewAdmin.swift in Sources */,
-				870632411CAEA1DA0017C73A /* SK4ConfigNSDate.swift in Sources */,
 				8702169C1CABDE94006137E9 /* SK4ConstraintMaker.swift in Sources */,
-				870632541CAEA1E90017C73A /* SK4ConfigCellColor.swift in Sources */,
 				87A583A81CA8F57300D0E357 /* SK4TableViewAdmin.swift in Sources */,
 				87FC53BC1CB2514A0081078A /* SK4DivideLayoutAdmin.swift in Sources */,
 				8702169D1CABDE94006137E9 /* SK4KeyboardObserver.swift in Sources */,
 				87FC53B51CB250A90081078A /* SK4NSDataExtension.swift in Sources */,
 				87A583A51CA8F57300D0E357 /* SK4ImageContext.swift in Sources */,
-				870632571CAEA1E90017C73A /* SK4ConfigCellExec.swift in Sources */,
 				87A583A21CA8F57300D0E357 /* SK4AlertController.swift in Sources */,
 				870216A61CABE0B0006137E9 /* SK4Interpolation.swift in Sources */,
-				8706325A1CAEA1E90017C73A /* SK4ConfigCellSegmented.swift in Sources */,
 				87FC53AC1CB24FC50081078A /* SK4TextBaseViewController.swift in Sources */,
-				870632651CAEA1F70017C73A /* SK4ConfigDateViewController.swift in Sources */,
 				870216A21CABDF7A006137E9 /* SK4TextFieldAdmin.swift in Sources */,
 				87A5838E1CA8F55D00D0E357 /* SK4Dispatch.swift in Sources */,
 				870632231CAEA15D0017C73A /* SK4TableViewController.swift in Sources */,
 				87A583A71CA8F57300D0E357 /* SK4PickerViewAdmin.swift in Sources */,
 				87FC53AE1CB24FC50081078A /* SK4TextImportViewController.swift in Sources */,
 				87A583931CA8F55D00D0E357 /* SK4StopWatch.swift in Sources */,
-				870632591CAEA1E90017C73A /* SK4ConfigCellPicker.swift in Sources */,
 				87FC53B71CB250A90081078A /* SK4NSDictionaryExtension.swift in Sources */,
 				87FC53B61CB250A90081078A /* SK4NSDateFormatterExtension.swift in Sources */,
-				870632521CAEA1E90017C73A /* SK4ConfigCell.swift in Sources */,
 				87A583971CA8F56900D0E357 /* SK4StringExtention.swift in Sources */,
 				87FC53B41CB250A90081078A /* SK4CGSizeExtension.swift in Sources */,
-				870632401CAEA1DA0017C73A /* SK4ConfigMulti.swift in Sources */,
-				870632441CAEA1DA0017C73A /* SK4ConfigUInt64.swift in Sources */,
-				8706323A1CAEA1DA0017C73A /* SK4ConfigAction.swift in Sources */,
 				87A583911CA8F55D00D0E357 /* SK4LeakCheck.swift in Sources */,
 				870216A11CABDF7A006137E9 /* SK4TargetAction.swift in Sources */,
-				870632421CAEA1DA0017C73A /* SK4ConfigString.swift in Sources */,
 				87FC53B81CB250A90081078A /* SK4UIEdgeInsetsExtension.swift in Sources */,
 				87FC53AD1CB24FC50081078A /* SK4TextExportViewController.swift in Sources */,
-				870632631CAEA1F70017C73A /* SK4ConfigChoiceViewController.swift in Sources */,
-				87A62D5C1CC3B4BC00F18ECD /* SK4ConfigCellColorIndex.swift in Sources */,
-				8706322A1CAEA1940017C73A /* SK4ConfigUserDefaults.swift in Sources */,
-				870632561CAEA1E90017C73A /* SK4ConfigCellDirectory.swift in Sources */,
-				870632551CAEA1E90017C73A /* SK4ConfigCellDate.swift in Sources */,
 				87A62D5E1CC3B63E00F18ECD /* SK4NSDateExtension.swift in Sources */,
 				87A583841CA8F51300D0E357 /* SK4Toolkit.swift in Sources */,
 				87A5838F1CA8F55D00D0E357 /* SK4ImageCache.swift in Sources */,
-				8706325B1CAEA1E90017C73A /* SK4ConfigCellSwitch.swift in Sources */,
-				8706323F1CAEA1DA0017C73A /* SK4ConfigInt.swift in Sources */,
-				870632531CAEA1E90017C73A /* SK4ConfigCellChoice.swift in Sources */,
 				87A583A11CA8F57300D0E357 /* SK4ActionSheet.swift in Sources */,
 				870216A91CABE128006137E9 /* SK4UIColorExtention.swift in Sources */,
-				870632581CAEA1E90017C73A /* SK4ConfigCellLabel.swift in Sources */,
-				870632451CAEA1DA0017C73A /* SK4ConfigValue.swift in Sources */,
-				870632431CAEA1DA0017C73A /* SK4ConfigUIColor.swift in Sources */,
 				87A62D601CC3BBE400F18ECD /* SK4DateRange.swift in Sources */,
 				87FC53BE1CB2514A0081078A /* SK4DivideLayoutView.swift in Sources */,
 				87A583A61CA8F57300D0E357 /* SK4OverlayIndicator.swift in Sources */,
 				87A583961CA8F56900D0E357 /* SK4NSAttributedStringExtention.swift in Sources */,
-				870632671CAEA1F70017C73A /* SK4ConfigViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,9 +420,7 @@
 				87632DC21CAC0ACA004D31E0 /* PauseFlagTests.swift in Sources */,
 				87FC53C41CB2530A0081078A /* DivideLayoutTests.swift in Sources */,
 				87BB45EC1CA2A1F100F0BC50 /* SK4ToolkitTests.swift in Sources */,
-				8760C8891CAF62460008C0F7 /* ConfigValueTests.swift in Sources */,
 				87632DC41CAC0BCD004D31E0 /* StringExtensionTests.swift in Sources */,
-				8760C8881CAF62460008C0F7 /* ConfigAdminTests.swift in Sources */,
 				87A62D641CC3C1B400F18ECD /* DateRangeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

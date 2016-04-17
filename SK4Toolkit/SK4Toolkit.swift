@@ -15,13 +15,15 @@ import UIKit
 public struct SK4ToolkitConst {
 
 	/// SK4Toolkitのバージョン
-	public static let version = "2.7.3"
+	public static let version = "2.8.0"
 
 
 
 	/// テーブルビューの最大幅
-	public static let tableViewMaxWidth = 560
+	public static var tableViewMaxWidth = 560
 
+	/// テーブルビューの背景色
+	public static var tableViewBackColor = UIColor(white: 0.75, alpha: 1.0)
 }
 
 

@@ -20,26 +20,10 @@ public class SK4TableViewController: UIViewController {
 	/// UITableView管理クラス
 	public var tableAdmin: SK4TableViewAdmin!
 
-	/// ユーザー設定管理クラス
-	public var configAdmin: SK4ConfigAdmin?
-
 	/// 初期化
 	public func setup(tableAdmin tableAdmin: SK4TableViewAdmin) {
 		self.tableView = tableAdmin.tableView
 		self.tableAdmin = tableAdmin
-	}
-
-	/// 初期化
-	public func setup(configAdmin configAdmin: SK4ConfigAdmin) {
-		let tv = makeDefaultTableView()
-		setup(tableView: tv, configAdmin: configAdmin)
-	}
-
-	/// 初期化
-	public func setup(tableView tableView: UITableView, configAdmin: SK4ConfigAdmin) {
-		self.tableView = tableView
-		self.configAdmin = configAdmin
-		self.tableAdmin = SK4ConfigTableViewAdmin(tableView: tableView, parent: self, configAdmin: configAdmin)
 	}
 
 	// /////////////////////////////////////////////////////////////
@@ -61,16 +45,12 @@ public class SK4TableViewController: UIViewController {
 		super.viewDidLoad()
 
 		// デフォルトの設定
-		view.backgroundColor = UIColor(white: 0.75, alpha: 1.0)
+		view.backgroundColor = SK4ToolkitConst.tableViewBackColor
 		navigationItem.backBarButtonItem = sk4BarButtonItem(title: "Back")
 	}
 
 	override public func viewWillAppear(animated: Bool) {
 		super.viewWillAppear(animated)
-
-		if let configAdmin = configAdmin {
-			navigationItem.title = configAdmin.title
-		}
 
 		tableAdmin?.viewWillAppear()
 	}
