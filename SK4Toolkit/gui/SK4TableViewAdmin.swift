@@ -50,29 +50,21 @@ public class SK4TableViewAdmin: NSObject, UITableViewDelegate, UITableViewDataSo
 	// MARK: - その他
 
 	/// 不要なセパレーターを消す
+	@available(*, deprecated=2.7.3, message="use UITableView.sk4ClearSeparator instead")
 	public func clearSeparator() {
-		if let tv = tableView {
-			let vi = UIView(frame: CGRectZero)
-			vi.backgroundColor = UIColor.clearColor()
-			tv.tableFooterView = vi
-		}
+		tableView?.sk4ClearSeparator()
 	}
 
 	/// 先頭のCellへスクロールする
+	@available(*, deprecated=2.7.3, message="use UITableView.sk4ScrollToTop instead")
 	public func scrollToTop() {
-		if numberOfRows(0) > 0 {
-			let index = NSIndexPath(forRow: 0, inSection: 0)
-			tableView.scrollToRowAtIndexPath(index, atScrollPosition: .Top, animated: false)
-		}
+		tableView?.sk4ScrollToTop()
 	}
 
-	/// 非同期でスクロール位置を調整する
-	/// ※reloadDataの直後でscrollToRowAtIndexPathが効かない場合に使用
+	/// 非同期で指定されたCellへスクロール　※reloadDataの直後等で使用
+	@available(*, deprecated=2.7.3, message="use UITableView.sk4ScrollToRowAsync instead")
 	public func scrollToRowAsync(row row: Int, section: Int, position: UITableViewScrollPosition = .Middle) {
-		sk4AsyncMain() {
-			let index = NSIndexPath(forRow: row, inSection: section)
-			self.tableView.scrollToRowAtIndexPath(index, atScrollPosition: position, animated: false)
-		}
+		tableView?.sk4ScrollToRowAsync(row: row, section: section, position: position)
 	}
 
 	// /////////////////////////////////////////////////////////////
