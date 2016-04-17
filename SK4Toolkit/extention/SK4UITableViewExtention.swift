@@ -47,7 +47,7 @@ extension UITableView {
 		}
 	}
 
-	/// 非同期で指定されたCellへスクロール　※reloadDataの直後等で使用
+	/// 指定されたCellへ非同期でスクロール　※reloadDataの直後等で使用
 	public func sk4ScrollToRowAsync(row row: Int, section: Int, position: UITableViewScrollPosition = .Middle) {
 		sk4AsyncMain() {
 			let index = NSIndexPath(forRow: row, inSection: section)

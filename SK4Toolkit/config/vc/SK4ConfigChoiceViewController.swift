@@ -35,7 +35,7 @@ public class SK4ConfigChoiceViewController: SK4TableViewController {
 		tableView.reloadData()
 
 		if cv.value >= 0 {
-			admin.scrollToRowAsync(row: cv.value, section: 0)
+			tableView.sk4ScrollToRowAsync(row: cv.value, section: 0)
 		}
 
 		navigationItem.title = configValue.title
