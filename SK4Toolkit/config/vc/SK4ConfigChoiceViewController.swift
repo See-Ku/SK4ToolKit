@@ -20,6 +20,8 @@ public class SK4ConfigChoiceViewController: SK4TableViewController {
 		super.viewDidLoad()
 
 		let tv = makeDefaultTableView(.Plain)
+		sk4LimitWidthConstraints(self, view: tv, maxWidth: SK4ToolkitConst.tableViewMaxWidth)
+
 		let admin = SK4ConfigChoiceViewControllerAdmin(tableView: tv, parent: self)
 		setup(tableAdmin: admin)
 	}
@@ -55,14 +57,20 @@ class SK4ConfigChoiceViewControllerAdmin: SK4TableViewAdmin {
 	func setupConfigIndex(configIndex: SK4ConfigIndex) {
 		self.configIndex = configIndex
 
+		cellStyle = .Default
+
+		//　SK4ConfigCellChoiceの場合、詳細があるかないかでスタイルを変更
 		if let cc = configIndex.cell as? SK4ConfigCellChoice {
 			if cc.cellStyle == .Default && configIndex.details != nil {
 				cellStyle = .Subtitle
 			} else {
 				cellStyle = cc.cellStyle
 			}
-		} else {
-			cellStyle = .Default
+		}
+
+		// SK4ConfigCellColorIndexはスタイル固定
+		if configIndex.cell is SK4ConfigCellColorIndex {
+			cellStyle = .Subtitle
 		}
 
 		cellId = "Cell\(cellStyle.rawValue)"
@@ -76,7 +84,11 @@ class SK4ConfigChoiceViewControllerAdmin: SK4TableViewAdmin {
 	}
 
 	override func cellForRow(cell: UITableViewCell, indexPath: NSIndexPath) {
-		cell.textLabel?.text = configIndex.choices[indexPath.row]
+		if configIndex.cell is SK4ConfigCellColorIndex {
+			cell.textLabel?.text = "　　　　　　　　　　　　"
+		} else {
+			cell.textLabel?.text = configIndex.choices[indexPath.row]
+		}
 
 		if let details = configIndex.details {
 			cell.detailTextLabel?.text = sk4SafeGet(details, index: indexPath.row)

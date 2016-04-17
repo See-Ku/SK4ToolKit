@@ -11,7 +11,18 @@ import UIKit
 // /////////////////////////////////////////////////////////////
 // MARK: - 各種定数
 
-public let SK4ToolKitVersion = "2.7.3"
+/// SK4Toolkitで使用する定数
+public struct SK4ToolkitConst {
+
+	/// SK4Toolkitのバージョン
+	public static let version = "2.7.3"
+
+
+
+	/// テーブルビューの最大幅
+	public static let tableViewMaxWidth = 560
+
+}
 
 
 // /////////////////////////////////////////////////////////////
