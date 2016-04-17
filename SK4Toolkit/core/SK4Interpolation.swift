@@ -28,6 +28,7 @@ extension CGFloat: SK4InterpolationType {
 extension Int: SK4InterpolationType {
 }
 
+
 // /////////////////////////////////////////////////////////////
 // MARK: - 線形補間
 
@@ -68,6 +69,21 @@ public func sk4InterpolatioCycle<T: SK4InterpolationType>(y0: T, y1: T, x0: T, x
 	} else {
 		return sk4Interpolation(y0: y0, y1: y1, x0: 0, x1: max, x: xn - max)
 	}
+}
+
+// /////////////////////////////////////////////////////////////
+
+/// 単純な線形補間（UIColor用）
+public func sk4Interpolation(y0 y0: UIColor, y1: UIColor, x0: CGFloat, x1: CGFloat, x: CGFloat) -> UIColor {
+	let c0 = y0.colors
+	let c1 = y1.colors
+
+	var cn: [CGFloat] = [1, 1, 1, 1]
+	for i in 0..<4 {
+		cn[i] = sk4Interpolation(y0: c0[i], y1: c1[i], x0: x0, x1: x1, x: x)
+	}
+
+	return UIColor(colors: cn)
 }
 
 // eof

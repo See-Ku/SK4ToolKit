@@ -65,6 +65,23 @@ extension UIColor {
 
 	// /////////////////////////////////////////////////////////////
 
+	/// 値をまとめて取得
+	public var colors: [CGFloat] {
+		var red: CGFloat = 0
+		var green: CGFloat = 0
+		var blue: CGFloat = 0
+		var alpha: CGFloat = 0
+		getRed(&red, green: &green, blue: &blue, alpha: &alpha)
+		return [red, green, blue, alpha]
+	}
+
+	/// CGFloatの配列からUIColorを生成
+	public convenience init(colors: [CGFloat]) {
+		self.init(red: colors[0], green: colors[1], blue: colors[2], alpha: colors[3])
+	}
+
+	// /////////////////////////////////////////////////////////////
+
 	/// UIColorから文字列を取得
 	public func sk4GetString() -> String {
 		var red: CGFloat = 0

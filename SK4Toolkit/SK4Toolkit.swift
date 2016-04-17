@@ -79,6 +79,14 @@ public func sk4AutoLayoutOff(view: UIView) {
 	}
 }
 
+/// 最大幅を制限する制約を設定
+public func sk4LimitWidthConstraints(viewController: UIViewController, view: UIView, maxWidth: Int) {
+	let base = viewController.view
+	let maker = SK4ConstraintMaker(viewController: viewController)
+	maker.addOverlay(view, baseItem: base, maxWidth: maxWidth)
+	base.addConstraints(maker.constraints)
+}
+
 /// ステータスバーの高さを取得
 public func sk4StatusBarHeight() -> CGFloat {
 	return UIApplication.sharedApplication().statusBarFrame.size.height
@@ -87,6 +95,11 @@ public func sk4StatusBarHeight() -> CGFloat {
 /// ナビゲーションバーの高さを取得
 public func sk4NavigationBarHeight(vc: UIViewController) -> CGFloat {
 	return vc.navigationController?.navigationBar.frame.size.height ?? 44
+}
+
+/// タブバーの高さを取得
+public func sk4TabBarHeight(vc: UIViewController) -> CGFloat {
+	return vc.tabBarController?.tabBar.frame.size.height ?? 49
 }
 
 
@@ -330,6 +343,45 @@ public func sk4VersionString() -> String {
 		return ""
 	}
 }
+
+/// バンドルされたリソースをNSDataとして読み込み
+public func sk4DataFromResource(name: String, ofType: String? = nil) -> NSData? {
+	let bundle = NSBundle.mainBundle()
+	if let path = bundle.pathForResource(name, ofType: ofType) {
+		return NSData(contentsOfFile: path)
+	} else {
+		sk4DebugLog("pathForResource error \(name) \(ofType):")
+		return nil
+	}
+}
+
+/// 指定されたURLを開く
+public func sk4OpenURL(path: String) -> Bool {
+	if let url = NSURL(string: path) {
+		UIApplication.sharedApplication().openURL(url)
+		return true
+	} else {
+		return false
+	}
+}
+
+/// うるう年か？
+public func sk4IsLeapYear(year: Int) -> Bool {
+	if year % 400 == 0 {
+		return true
+	}
+
+	if year % 100 == 0 {
+		return false
+	}
+
+	if year % 4 == 0 {
+		return true
+	}
+
+	return false
+}
+
 
 // /////////////////////////////////////////////////////////////
 

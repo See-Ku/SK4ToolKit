@@ -18,6 +18,14 @@ public enum SK4VerticalAlignment: Int {
 extension String {
 
 	// /////////////////////////////////////////////////////////////
+	// MARK: - ローカライズ
+
+	/// ローカライズした文字列を取得
+	public var loc: String {
+		return NSLocalizedString(self, comment: self)
+	}
+
+	// /////////////////////////////////////////////////////////////
 	// MARK: - トリミング
 
 	/// 文字列の前後から空白文字を削除

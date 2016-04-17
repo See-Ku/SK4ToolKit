@@ -10,6 +10,26 @@ import UIKit
 
 extension UIEdgeInsets {
 
+	/// 各バーの範囲を除く形で初期化
+	public init(vc: UIViewController) {
+		var top: CGFloat = 0
+		if UIApplication.sharedApplication().statusBarHidden == false {
+			top += sk4StatusBarHeight()
+		}
+
+		if vc.navigationController != nil {
+			top += sk4NavigationBarHeight(vc)
+		}
+
+		var bottom: CGFloat = 0
+
+		if vc.tabBarController != nil {
+			bottom += sk4TabBarHeight(vc)
+		}
+
+		self.init(top: top, left: 0, bottom: bottom, right: 0)
+	}
+
 	/// 値をまとめて操作
 	public var insets: [CGFloat] {
 		get {
