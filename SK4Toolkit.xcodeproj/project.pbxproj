@@ -75,6 +75,7 @@
 		87A62D5A1CC39F3F00F18ECD /* SK4UITableViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A62D591CC39F3F00F18ECD /* SK4UITableViewExtention.swift */; };
 		87A62D5C1CC3B4BC00F18ECD /* SK4ConfigCellColorIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A62D5B1CC3B4BC00F18ECD /* SK4ConfigCellColorIndex.swift */; };
 		87A62D5E1CC3B63E00F18ECD /* SK4NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A62D5D1CC3B63E00F18ECD /* SK4NSDateExtension.swift */; };
+		87A62D601CC3BBE400F18ECD /* SK4DateRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A62D5F1CC3BBE400F18ECD /* SK4DateRange.swift */; };
 		87BB45E01CA2A1F100F0BC50 /* SK4Toolkit.h in Headers */ = {isa = PBXBuildFile; fileRef = 87BB45DF1CA2A1F100F0BC50 /* SK4Toolkit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		87BB45E71CA2A1F100F0BC50 /* SK4Toolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87BB45DC1CA2A1F100F0BC50 /* SK4Toolkit.framework */; };
 		87BB45EC1CA2A1F100F0BC50 /* SK4ToolkitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BB45EB1CA2A1F100F0BC50 /* SK4ToolkitTests.swift */; };
@@ -172,6 +173,7 @@
 		87A62D591CC39F3F00F18ECD /* SK4UITableViewExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4UITableViewExtention.swift; path = extention/SK4UITableViewExtention.swift; sourceTree = "<group>"; };
 		87A62D5B1CC3B4BC00F18ECD /* SK4ConfigCellColorIndex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4ConfigCellColorIndex.swift; path = config/cell/SK4ConfigCellColorIndex.swift; sourceTree = "<group>"; };
 		87A62D5D1CC3B63E00F18ECD /* SK4NSDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4NSDateExtension.swift; path = extention/SK4NSDateExtension.swift; sourceTree = "<group>"; };
+		87A62D5F1CC3BBE400F18ECD /* SK4DateRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SK4DateRange.swift; path = core/SK4DateRange.swift; sourceTree = "<group>"; };
 		87BB45DC1CA2A1F100F0BC50 /* SK4Toolkit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SK4Toolkit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87BB45DF1CA2A1F100F0BC50 /* SK4Toolkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SK4Toolkit.h; sourceTree = "<group>"; };
 		87BB45E11CA2A1F100F0BC50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -280,6 +282,7 @@
 			isa = PBXGroup;
 			children = (
 				87A583881CA8F55D00D0E357 /* SK4Dispatch.swift */,
+				87A62D5F1CC3BBE400F18ECD /* SK4DateRange.swift */,
 				870216A41CABE0B0006137E9 /* SK4Interpolation.swift */,
 				870216A51CABE0B0006137E9 /* SK4PauseFlag.swift */,
 				87A583891CA8F55D00D0E357 /* SK4ImageCache.swift */,
@@ -563,6 +566,7 @@
 				870632581CAEA1E90017C73A /* SK4ConfigCellLabel.swift in Sources */,
 				870632451CAEA1DA0017C73A /* SK4ConfigValue.swift in Sources */,
 				870632431CAEA1DA0017C73A /* SK4ConfigUIColor.swift in Sources */,
+				87A62D601CC3BBE400F18ECD /* SK4DateRange.swift in Sources */,
 				87FC53BE1CB2514A0081078A /* SK4DivideLayoutView.swift in Sources */,
 				87A583A61CA8F57300D0E357 /* SK4OverlayIndicator.swift in Sources */,
 				87A583961CA8F56900D0E357 /* SK4NSAttributedStringExtention.swift in Sources */,
