@@ -28,7 +28,7 @@ https://github.com/See-Ku/SK4ToolDemo
 
 Podfileにこんな感じで記入して下さい。
 
-	pod 'SK4Toolkit', :git => 'https://github.com/See-Ku/SK4Toolkit.git'
+	pod 'SK4Toolkit'
 
 ### プロジェクトをダウンロードしてインストール
 
