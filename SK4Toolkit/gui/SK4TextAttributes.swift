@@ -58,6 +58,13 @@ public class SK4TextAttributes {
 		}
 	}
 
+	/// NSStrikethroughStyleAttributeName
+	public var strikethrough: Int = 0 {
+		didSet {
+			attributes[NSStrikethroughStyleAttributeName] = NSNumber(integer: strikethrough)
+		}
+	}
+
 	/// 初期化
 	public init() {
 	}

@@ -332,6 +332,40 @@ public func sk4SafeGet<T>(array: Array<T>, index: Int) -> T? {
 
 
 // /////////////////////////////////////////////////////////////
+// MARK: - Date & Time
+
+/// うるう年か？
+public func sk4IsLeapYear(year: Int) -> Bool {
+	if year % 400 == 0 {
+		return true
+	}
+
+	if year % 100 == 0 {
+		return false
+	}
+
+	if year % 4 == 0 {
+		return true
+	}
+
+	return false
+}
+
+/// 指定された月の日数を取得
+/// month: 1 = 1月
+public func sk4MonthDays(year year: Int, month: Int) -> Int {
+	let ar = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+
+	if month == 2 && sk4IsLeapYear(year) {
+		return 29
+	} else {
+		return ar[month-1]
+	}
+}
+
+
+
+// /////////////////////////////////////////////////////////////
 // MARK: - その他
 
 /// DEBUGが設定されている時のみ、メッセージを出力。
@@ -376,23 +410,6 @@ public func sk4OpenURL(path: String) -> Bool {
 	} else {
 		return false
 	}
-}
-
-/// うるう年か？
-public func sk4IsLeapYear(year: Int) -> Bool {
-	if year % 400 == 0 {
-		return true
-	}
-
-	if year % 100 == 0 {
-		return false
-	}
-
-	if year % 4 == 0 {
-		return true
-	}
-
-	return false
 }
 
 
