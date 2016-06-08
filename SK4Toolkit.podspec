@@ -80,8 +80,8 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.version      = "2.8.0"
-  s.source       = { :git => "https://github.com/See-Ku/SK4Toolkit.git", :tag => "v2.8.0" }
+  s.version      = "2.8.1"
+  s.source       = { :git => "https://github.com/See-Ku/SK4Toolkit.git", :tag => "v2.8.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
