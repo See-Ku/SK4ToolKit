@@ -14,6 +14,10 @@ public class SK4ActionSheet: SK4AlertController {
 	// /////////////////////////////////////////////////////////////
 	// MARK: - プロパティ＆初期化
 
+	/// popover表示で使うsourceItem
+	public var sourceItem: AnyObject?
+
+/*
 	/// popover表示で使うsourceView
 	public var sourceView: UIView?
 
@@ -25,7 +29,8 @@ public class SK4ActionSheet: SK4AlertController {
 
 	/// popover表示で使うpermittedArrowDirections
 	public var permittedArrowDirections = UIPopoverArrowDirection.Any
-
+*/
+	
 	/// 初期化
 	override public init() {
 		super.init()
@@ -49,6 +54,9 @@ public class SK4ActionSheet: SK4AlertController {
 	/// ActionSheetを表示する位置を指定
 	public func setSourceItem(item: AnyObject) {
 
+		sourceItem = item
+
+/*
 		// UIBarButtonItemか？
 		if let bar = item as? UIBarButtonItem {
 			barButtonItem = bar
@@ -60,10 +68,13 @@ public class SK4ActionSheet: SK4AlertController {
 			setSourceView(view)
 			return
 		}
+*/
 	}
 
 	/// ActionSheetを表示する位置を指定　※矢印の向きは自動で判定
+	@available(*, deprecated=2.8.1, message="use UIPopoverPresentationController.sk4SetSourceView instead")
 	public func setSourceView(view: UIView) {
+/*
 		sourceView = view
 		sourceRect.size = CGSize()
 		sourceRect.origin.x = view.bounds.midX
@@ -94,6 +105,7 @@ public class SK4ActionSheet: SK4AlertController {
 			sourceRect.origin.y = view.bounds.maxY
 			permittedArrowDirections = .Up
 		}
+*/
 	}
 
 	// /////////////////////////////////////////////////////////////
@@ -102,10 +114,17 @@ public class SK4ActionSheet: SK4AlertController {
 	/// UIAlertControllerを生成
 	override public func getAlertController() -> UIAlertController {
 		let alert = super.getAlertController()
+
+		if let item = sourceItem {
+			alert.popoverPresentationController?.sk4SetSourceItem(item)
+		}
+
+/*
 		alert.popoverPresentationController?.sourceView = sourceView
 		alert.popoverPresentationController?.sourceRect = sourceRect
 		alert.popoverPresentationController?.barButtonItem = barButtonItem
 		alert.popoverPresentationController?.permittedArrowDirections = permittedArrowDirections
+*/
 		return alert
 	}
 }
