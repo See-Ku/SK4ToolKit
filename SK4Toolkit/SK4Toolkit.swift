@@ -15,7 +15,7 @@ import UIKit
 public struct SK4ToolkitConst {
 
 	/// SK4Toolkitのバージョン
-	public static let version = "2.8.1"
+	public static let version = "2.8.2"
 
 
 
